@@ -1,0 +1,8 @@
+{
+  "name": "msc-last-updated",
+  "private": true,
+  "scripts": {
+    "lint": "composer lint",
+    "lint-fix": "composer lint-fix"
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="MSC Last Updated">
+  <description>WordPress coding standards for Micro Site Care: Last Updated.</description>
+
+  <file>.</file>
+
+  <arg name="basepath" value="."/>
+  <arg name="colors"/>
+  <arg value="sp"/>
+
+  <config name="minimum_supported_wp_version" value="5.9"/>
+
+  <exclude-pattern>/vendor/*</exclude-pattern>
+  <exclude-pattern>/node_modules/*</exclude-pattern>
+  <exclude-pattern>/dist/*</exclude-pattern>
+
+  <rule ref="WordPress-Core"/>
+  <rule ref="WordPress-Docs"/>
+  <rule ref="WordPress-Extra"/>
+</ruleset>
