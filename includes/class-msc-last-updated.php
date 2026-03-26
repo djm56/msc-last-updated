@@ -1,69 +1,166 @@
 <?php
+/**
+ * Main bootstrap class for MSC Last Updated.
+ */
+
+namespace MSC_Last_Updated;
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
-class MSC_Last_Updated {
-    const OPTION_KEY = 'msclu_options';
+class Plugin {
 
-    /** @var MSC_Last_Updated|null */
-    private static $instance = null;
+	const OPTION_KEY = 'msclu_options';
 
-    /** @var array<string,mixed> */
-    private $options = array();
+	/**
+	 * Singleton instance.
+	 *
+	 * @var Plugin|null
+	 */
+	private static $instance = null;
 
-    public static function instance() {
-        if ( null === self::$instance ) {
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
+	/**
+	 * Module instance.
+	 *
+	 * @var Module|null
+	 */
+	private $module = null;
 
-    public static function default_options() {
-        return array(
-            'module_enabled'  => 1,
-            'post_types'      => array( 'post', 'page' ),
-            'days_threshold'  => 0,
-            'position'        => 'end_content',
-            'template'        => 'Last updated on {date}',
-        );
-    }
+	/**
+	 * Settings instance.
+	 *
+	 * @var Settings
+	 */
+	private $settings;
 
-    public static function activate() {
-        $stored = get_option( self::OPTION_KEY, array() );
-        if ( ! is_array( $stored ) ) {
-            $stored = array();
-        }
-        update_option( self::OPTION_KEY, wp_parse_args( $stored, self::default_options() ) );
-    }
+	/**
+	 * Analytics instance.
+	 *
+	 * @var object|null
+	 */
+	private $analytics = null;
 
-    public static function deactivate() {}
+	/**
+	 * Admin analytics instance.
+	 *
+	 * @var object|null
+	 */
+	private $admin_analytics = null;
 
-    private function __construct() {
-        $this->options = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
+	/**
+	 * Get singleton instance.
+	 *
+	 * @return Plugin
+	 */
+	public static function instance() {
+		if ( null === self::$instance ) {
+			self::$instance = new self();
+		}
+		return self::$instance;
+	}
 
-        new MSC_Last_Updated_Settings( $this );
+	/**
+	 * Activate plugin.
+	 */
+	public static function activate() {
+		$options = get_option( self::OPTION_KEY );
+		if ( ! is_array( $options ) ) {
+			update_option( self::OPTION_KEY, self::default_options() );
+		}
+	}
 
-        if ( ! $this->is_pro_active() ) {
-            new MSC_Last_Updated_Module( $this );
-        }
-    }
+	/**
+	 * Deactivate plugin.
+	 */
+	public static function deactivate() {
+		// Reserved for deactivation cleanup hooks.
+	}
 
-    public function is_pro_active() {
-        return (bool) apply_filters( 'msclu_pro_active', false );
-    }
+	/**
+	 * Constructor.
+	 */
+	private function __construct() {
+		$this->settings = new Settings( $this );
 
-    public function get_options() {
-        return $this->options;
-    }
+		if ( false ) {
+			$this->analytics = class_exists( __NAMESPACE__ . '\\Plugin_Analytics' ) ? new Plugin_Analytics() : null;
+		}
 
-    public function get_option( $key, $default = null ) {
-        return array_key_exists( $key, $this->options ) ? $this->options[ $key ] : $default;
-    }
+		if ( false ) {
+			$this->admin_analytics = class_exists( __NAMESPACE__ . '\\Plugin_Admin_Analytics' ) ? new Plugin_Admin_Analytics() : null;
+			if ( is_object( $this->admin_analytics ) && method_exists( $this->admin_analytics, 'hooks' ) ) {
+				$this->admin_analytics->hooks();
+			}
+		}
 
-    public function update_options( $new_options ) {
-        $this->options = wp_parse_args( $new_options, self::default_options() );
-        update_option( self::OPTION_KEY, $this->options );
-    }
+		if ( ! $this->is_pro_active() || 'pro' === 'free' ) {
+			$this->module = new Module( $this );
+		}
+	}
+
+	/**
+	 * Default options.
+	 *
+	 * @return array<string,mixed>
+	 */
+	public static function default_options() {
+		return array(
+			'module_enabled' => 1,
+			'post_types'     => array( 'post', 'page' ),
+		);
+	}
+
+	/**
+	 * Option getter.
+	 *
+	 * @param string $key Key.
+	 * @param mixed  $default Default value.
+	 * @return mixed
+	 */
+	public function get_option( $key, $default = null ) {
+		$options = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
+		return array_key_exists( $key, $options ) ? $options[ $key ] : $default;
+	}
+
+	/**
+	 * Save merged options.
+	 *
+	 * @param array<string,mixed> $new_options New values.
+	 * @return bool
+	 */
+	public function update_options( $new_options ) {
+		$current = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
+		$merged  = array_merge( $current, $new_options );
+		return (bool) update_option( self::OPTION_KEY, $merged );
+	}
+
+	/**
+	 * Whether pro plugin is active.
+	 *
+	 * @return bool
+	 */
+	public function is_pro_active() {
+		return (bool) apply_filters( 'msc-last-updated_pro_active', false );
+	}
+
+	/**
+	 * Feature switch helper.
+	 *
+	 * @param string $feature Feature key.
+	 * @return bool
+	 */
+	public function has_feature( $feature ) {
+		$map = array(
+			'analytics'         => false,
+			'admin_analytics'   => false,
+			'cron'              => false,
+			'meta_registration' => false,
+			'bulk_actions'      => false,
+			'shortcode'         => false,
+			'ajax'              => false,
+		);
+
+		return ! empty( $map[ $feature ] );
+	}
 }

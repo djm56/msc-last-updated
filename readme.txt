@@ -1,34 +1,36 @@
-=== Micro Site Care: Last Updated ===
-Contributors: anomalousdevelopers
-Tags: last updated, modified date, freshness, content age
+=== MSC Last Updated ===
+Contributors: anomalous
+Tags: last-updated,content,editorial,date
 Requires at least: 5.9
-Tested up to: 6.5
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 0.1.0
-License: GPL-2.0-or-later
+Stable tag: 1.0.0
+License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display a "last updated" label on posts when content has been modified after the original publish date.
+Display and control the post last-updated date in flexible positions.
 
 == Description ==
 
-Micro Site Care: Last Updated automatically injects a configurable label when a post's modified date is later than its publish date.
+Display and control the post last-updated date in flexible positions.
 
-* Global label template with `{date}` token.
-* Three position options: above title, below title, or end of content.
-* Optional days threshold — only show the label after N days.
-* Shortcode `[msclu_last_updated]` for manual placement.
-* Filter hook `msclu_last_updated_output` for developer customisation.
+== Frequently Asked Questions ==
 
-Upgrade to **Last Updated Pro** for relative date formatting (e.g. "Updated 3 days ago"), style presets (muted/pill/badge), and per-post force show/hide override.
+= How do I configure the plugin? =
+Navigate to Site Care > MSC Last Updated to configure the plugin settings.
 
 == Installation ==
 
-1. Upload the `msc-last-updated` folder to `wp-content/plugins/`.
-2. Activate through **Plugins > Installed Plugins**.
-3. Navigate to **Site Care > Last Updated** to configure.
+1. Upload the plugin to `/wp-content/plugins/`.
+2. Activate in the WordPress plugins screen.
+3. Configure from the MSC Site Care menu.
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Initial release.
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Initial plugin release.

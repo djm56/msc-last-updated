@@ -1,10 +1,10 @@
 {
   "name": "anomalous/msc-last-updated",
-  "description": "Development tooling for Micro Site Care: Last Updated.",
+  "description": "Display and control the post last-updated date in flexible positions.",
   "type": "wordpress-plugin",
   "require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
-    "phpcodesniffer/phpcodesniffer": "^3.10",
+    "squizlabs/php_codesniffer": "^3.10",
     "phpcsstandards/phpcsextra": "^1.2",
     "phpcsstandards/phpcsutils": "^1.1",
     "wp-coding-standards/wpcs": "^3.1"
@@ -12,10 +12,5 @@
   "scripts": {
     "lint": "phpcs",
     "lint-fix": "phpcbf"
-  },
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
   }
 }
