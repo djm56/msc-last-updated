@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "composer lint",
-    "lint-fix": "composer lint-fix"
+    "lint-fix": "composer lint-fix",
+    "i18n:pot": "composer i18n:pot"
   }
 }

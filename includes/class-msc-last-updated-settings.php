@@ -54,7 +54,7 @@ class Settings {
 	private function maybe_register_upgrade_submenu() {
 		global $submenu;
 
-		$upgrade_slug = 'msc-site-care-upgrade';
+		$upgrade_slug       = 'msc-site-care-upgrade';
 		$already_registered = false;
 
 		if ( ! empty( $submenu['msc-site-care'] ) ) {
