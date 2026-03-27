@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: MSC Last Updated
+ * Plugin Name: Micro Site Care: Last Updated
  * Plugin URI: https://anomalous.co.za
  * Description: Display and control the post last-updated date in flexible positions.
  * Version: 1.0.0
