@@ -49,8 +49,8 @@ class Settings {
 
 		if ( ! isset( $admin_page_hooks['msc-site-care'] ) ) {
 			add_menu_page(
-				esc_html__( 'Site Care', 'msc-last-updated' ),
-				esc_html__( 'Site Care', 'msc-last-updated' ),
+				esc_html__( 'Micro Site Care', 'msc-last-updated' ),
+				esc_html__( 'Micro Site Care', 'msc-last-updated' ),
 				'manage_options',
 				'msc-site-care',
 				array( __CLASS__, 'render_landing_page' ),
@@ -61,8 +61,8 @@ class Settings {
 
 		add_submenu_page(
 			'msc-site-care',
-			'MSC Last Updated',
-			'MSC Last Updated',
+			'Last Updated',
+			'Last Updated',
 			'manage_options',
 			'msc-last-updated',
 			array( $this, 'render_page' )
@@ -141,9 +141,9 @@ class Settings {
 	 */
 	public static function render_landing_page() {
 		echo '<div class="wrap msc-admin-wrap">';
-		echo '<div class="msc-admin-header"><h1>' . esc_html__( 'Site Care', 'msc-last-updated' ) . '</h1></div>';
+		echo '<div class="msc-admin-header"><h1>' . esc_html__( 'Micro Site Care', 'msc-last-updated' ) . '</h1></div>';
 		echo '<div class="msc-admin-card">';
-		echo '<p>' . esc_html__( 'Welcome to Site Care by Anomalous Developers. Use the submenu items to configure installed modules.', 'msc-last-updated' ) . '</p>';
+		echo '<p>' . esc_html__( 'Welcome to Micro Site Care by Anomalous Developers. Use the submenu items to configure installed modules.', 'msc-last-updated' ) . '</p>';
 		echo '</div>';
 		echo '</div>';
 	}
@@ -242,7 +242,7 @@ class Settings {
 		?>
 		<div class="wrap msc-admin-wrap">
 			<div class="msc-admin-header">
-				<h1><?php echo esc_html__( 'Last Updated', 'msc-last-updated' ); ?></h1>
+				<h1><?php echo esc_html__( 'MSC Last Updated', 'msc-last-updated' ); ?></h1>
 			</div>
 			<div class="msc-admin-card">
 				<?php // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only success notice flag. ?>
