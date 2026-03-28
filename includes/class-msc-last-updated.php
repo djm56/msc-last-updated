@@ -123,7 +123,14 @@ class Plugin {
 	 * @return mixed
 	 */
 	public function get_option( $key, $default = null ) {
-		$options = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
+		// Get all options from database, then apply Free defaults ONLY for Free keys that are missing.
+		$db_options = (array) get_option( self::OPTION_KEY, array() );
+		$free_defaults = self::default_options();
+
+		// Merge: DB first, then defaults only for keys in $free_defaults.
+		// This preserves Pro fields that aren't in $free_defaults.
+		$options = array_merge( $free_defaults, $db_options );
+
 		return array_key_exists( $key, $options ) ? $options[ $key ] : $default;
 	}
 
@@ -134,9 +141,21 @@ class Plugin {
 	 * @return bool
 	 */
 	public function update_options( $new_options ) {
-		$current = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
-		$merged  = array_merge( $current, $new_options );
-		return (bool) update_option( self::OPTION_KEY, $merged );
+		// Get current options from database WITHOUT applying defaults, to preserve all Pro fields.
+		$current = (array) get_option( self::OPTION_KEY, array() );
+		error_log( 'MSC Last Updated: update_options - current from DB: ' . wp_json_encode( $current ) );
+		error_log( 'MSC Last Updated: update_options - new options to merge: ' . wp_json_encode( $new_options ) );
+
+		// Merge new options over current, preserving all existing keys not being overwritten.
+		$merged = array_merge( $current, $new_options );
+
+		error_log( 'MSC Last Updated: update_options - final merged: ' . wp_json_encode( $merged ) );
+
+		$result = (bool) update_option( self::OPTION_KEY, $merged );
+
+		error_log( 'MSC Last Updated: update_options - update_option returned: ' . ( $result ? 'true' : 'false' ) );
+
+		return $result;
 	}
 
 	/**
