@@ -94,9 +94,7 @@ class Plugin {
 			}
 		}
 
-		if ( ! $this->is_pro_active() || 'pro' === 'free' ) {
-			$this->module = new Module( $this );
-		}
+		$this->module = new Module( $this );
 	}
 
 	/**
@@ -108,6 +106,12 @@ class Plugin {
 		return array(
 			'module_enabled' => 1,
 			'post_types'     => array( 'post', 'page' ),
+			'post_type_mode' => 'include',
+			'position'       => 'after',
+			'label_text'     => __( 'Updated %s', 'msc-last-updated' ),
+			'date_mode'      => 'site',
+			'custom_format'  => 'F j, Y',
+			'modified_only'  => 1,
 		);
 	}
 
@@ -133,6 +137,21 @@ class Plugin {
 		$current = wp_parse_args( get_option( self::OPTION_KEY, array() ), self::default_options() );
 		$merged  = array_merge( $current, $new_options );
 		return (bool) update_option( self::OPTION_KEY, $merged );
+	}
+
+	/**
+	 * Returns rendered last-updated markup for a post.
+	 *
+	 * @param int                $post_id Post ID.
+	 * @param array<string,mixed> $context Render context.
+	 * @return string
+	 */
+	public function get_last_updated_markup( $post_id = 0, $context = array() ) {
+		if ( ! $this->module instanceof Module ) {
+			return '';
+		}
+
+		return $this->module->get_last_updated_html( $post_id, $context );
 	}
 
 	/**

@@ -92,14 +92,46 @@ class Settings {
 		$module_enabled = isset( $_POST['module_enabled'] ) ? 1 : 0;
 		$post_types     = isset( $_POST['post_types'] ) ? (array) wp_unslash( $_POST['post_types'] ) : array();
 		$post_types     = array_values( array_filter( array_map( 'sanitize_key', $post_types ) ) );
+		$post_type_mode = isset( $_POST['post_type_mode'] ) ? sanitize_key( wp_unslash( $_POST['post_type_mode'] ) ) : 'include';
+		$position       = isset( $_POST['position'] ) ? sanitize_key( wp_unslash( $_POST['position'] ) ) : 'after';
+		$label_text     = isset( $_POST['label_text'] ) ? sanitize_text_field( wp_unslash( $_POST['label_text'] ) ) : __( 'Updated %s', 'msc-last-updated' );
+		$date_mode      = isset( $_POST['date_mode'] ) ? sanitize_key( wp_unslash( $_POST['date_mode'] ) ) : 'site';
+		$custom_format  = isset( $_POST['custom_format'] ) ? sanitize_text_field( wp_unslash( $_POST['custom_format'] ) ) : 'F j, Y';
+		$modified_only  = isset( $_POST['modified_only'] ) ? 1 : 0;
 
 		if ( empty( $post_types ) ) {
 			$post_types = array( 'post', 'page' );
 		}
 
+		if ( ! in_array( $post_type_mode, array( 'include', 'exclude' ), true ) ) {
+			$post_type_mode = 'include';
+		}
+
+		if ( ! in_array( $position, array( 'before', 'after', 'both', 'manual' ), true ) ) {
+			$position = 'after';
+		}
+
+		if ( ! in_array( $date_mode, array( 'site', 'custom' ), true ) ) {
+			$date_mode = 'site';
+		}
+
+		if ( '' === $label_text ) {
+			$label_text = __( 'Updated %s', 'msc-last-updated' );
+		}
+
+		if ( '' === $custom_format ) {
+			$custom_format = 'F j, Y';
+		}
+
 		$options = array(
 			'module_enabled' => $module_enabled,
 			'post_types'     => $post_types,
+			'post_type_mode' => $post_type_mode,
+			'position'       => $position,
+			'label_text'     => $label_text,
+			'date_mode'      => $date_mode,
+			'custom_format'  => $custom_format,
+			'modified_only'  => $modified_only,
 		);
 
 		/**
@@ -135,6 +167,12 @@ class Settings {
 		$options = array(
 			'module_enabled' => (int) $this->plugin->get_option( 'module_enabled', 1 ),
 			'post_types'     => (array) $this->plugin->get_option( 'post_types', array( 'post', 'page' ) ),
+			'post_type_mode' => (string) $this->plugin->get_option( 'post_type_mode', 'include' ),
+			'position'       => (string) $this->plugin->get_option( 'position', 'after' ),
+			'label_text'     => (string) $this->plugin->get_option( 'label_text', __( 'Updated %s', 'msc-last-updated' ) ),
+			'date_mode'      => (string) $this->plugin->get_option( 'date_mode', 'site' ),
+			'custom_format'  => (string) $this->plugin->get_option( 'custom_format', 'F j, Y' ),
+			'modified_only'  => (int) $this->plugin->get_option( 'modified_only', 1 ),
 		);
 
 		$post_types = get_post_types( array( 'public' => true ), 'objects' );
@@ -166,14 +204,67 @@ class Settings {
 							</td>
 						</tr>
 						<tr>
+							<th scope="row"><label for="post_type_mode"><?php esc_html_e( 'Post type visibility mode', 'msc-last-updated' ); ?></label></th>
+							<td>
+								<select id="post_type_mode" name="post_type_mode">
+									<option value="include" <?php selected( 'include', $options['post_type_mode'] ); ?>><?php esc_html_e( 'Show only on selected post types', 'msc-last-updated' ); ?></option>
+									<option value="exclude" <?php selected( 'exclude', $options['post_type_mode'] ); ?>><?php esc_html_e( 'Show on all public post types except selected', 'msc-last-updated' ); ?></option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="position"><?php esc_html_e( 'Automatic placement', 'msc-last-updated' ); ?></label></th>
+							<td>
+								<select id="position" name="position">
+									<option value="after" <?php selected( 'after', $options['position'] ); ?>><?php esc_html_e( 'After content', 'msc-last-updated' ); ?></option>
+									<option value="before" <?php selected( 'before', $options['position'] ); ?>><?php esc_html_e( 'Before content', 'msc-last-updated' ); ?></option>
+									<option value="both" <?php selected( 'both', $options['position'] ); ?>><?php esc_html_e( 'Before and after content', 'msc-last-updated' ); ?></option>
+									<option value="manual" <?php selected( 'manual', $options['position'] ); ?>><?php esc_html_e( 'Manual only (template tag/shortcode)', 'msc-last-updated' ); ?></option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="label_text"><?php esc_html_e( 'Label template', 'msc-last-updated' ); ?></label></th>
+							<td>
+								<input id="label_text" name="label_text" type="text" class="regular-text" value="<?php echo esc_attr( $options['label_text'] ); ?>" />
+								<p class="description"><?php esc_html_e( 'Use %s where the formatted date should appear.', 'msc-last-updated' ); ?></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="date_mode"><?php esc_html_e( 'Date format source', 'msc-last-updated' ); ?></label></th>
+							<td>
+								<select id="date_mode" name="date_mode">
+									<option value="site" <?php selected( 'site', $options['date_mode'] ); ?>><?php esc_html_e( 'Use WordPress site date format', 'msc-last-updated' ); ?></option>
+									<option value="custom" <?php selected( 'custom', $options['date_mode'] ); ?>><?php esc_html_e( 'Use custom date format', 'msc-last-updated' ); ?></option>
+								</select>
+								<p class="description"><?php esc_html_e( 'Custom format uses WordPress date format tokens.', 'msc-last-updated' ); ?></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="custom_format"><?php esc_html_e( 'Custom date format', 'msc-last-updated' ); ?></label></th>
+							<td>
+								<input id="custom_format" name="custom_format" type="text" class="regular-text" value="<?php echo esc_attr( $options['custom_format'] ); ?>" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><?php esc_html_e( 'Visibility', 'msc-last-updated' ); ?></th>
+							<td>
+								<label for="modified_only">
+									<input id="modified_only" type="checkbox" name="modified_only" value="1" <?php checked( 1, $options['modified_only'] ); ?> />
+									<?php esc_html_e( 'Only show when modified date differs from publish date.', 'msc-last-updated' ); ?>
+								</label>
+							</td>
+						</tr>
+						<tr>
 							<th scope="row"><?php esc_html_e( 'Post types', 'msc-last-updated' ); ?></th>
 							<td>
 								<fieldset>
 									<?php foreach ( $post_types as $post_type ) : ?>
-										<label style="display:block; margin: 6px 0;">
+										<label>
 											<input type="checkbox" name="post_types[]" value="<?php echo esc_attr( $post_type->name ); ?>" <?php checked( in_array( $post_type->name, $options['post_types'], true ) ); ?> />
 											<?php echo esc_html( $post_type->labels->singular_name ); ?>
 										</label>
+										<br />
 									<?php endforeach; ?>
 								</fieldset>
 							</td>

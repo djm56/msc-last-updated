@@ -74,3 +74,33 @@ add_action(
 		MSC_Last_Updated\Plugin::instance();
 	}
 );
+
+if ( ! function_exists( 'msclup_get_last_updated' ) ) {
+	/**
+	 * Returns rendered Last Updated markup for a post.
+	 *
+	 * @param int                $post_id Post ID.
+	 * @param array<string,mixed> $context Render context.
+	 * @return string
+	 */
+	function msclup_get_last_updated( $post_id = 0, $context = array() ) {
+		if ( ! class_exists( 'MSC_Last_Updated\\Plugin' ) ) {
+			return '';
+		}
+
+		return MSC_Last_Updated\Plugin::instance()->get_last_updated_markup( (int) $post_id, (array) $context );
+	}
+}
+
+if ( ! function_exists( 'msclup_the_last_updated' ) ) {
+	/**
+	 * Echoes rendered Last Updated markup for a post.
+	 *
+	 * @param int                $post_id Post ID.
+	 * @param array<string,mixed> $context Render context.
+	 * @return void
+	 */
+	function msclup_the_last_updated( $post_id = 0, $context = array() ) {
+		echo wp_kses_post( msclup_get_last_updated( $post_id, $context ) );
+	}
+}

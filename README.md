@@ -6,7 +6,7 @@ Display and control the post last-updated date in flexible positions.
 
 1. Upload the plugin folder to `/wp-content/plugins/`.
 2. Activate the plugin through the WordPress plugins screen.
-3. Configure settings under the MSC Site Care admin section.
+3. Configure settings at `Settings -> MSC Last Updated`.
 
 ## Development
 
