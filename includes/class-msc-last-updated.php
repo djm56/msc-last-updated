@@ -127,9 +127,11 @@ class Plugin {
 		$db_options = (array) get_option( self::OPTION_KEY, array() );
 		$free_defaults = self::default_options();
 
-		// Merge: DB first, then defaults only for keys in $free_defaults.
-		// This preserves Pro fields that aren't in $free_defaults.
+		// Merge: DB options first (top priority), then fill gaps from defaults.
+		// This preserves Pro fields AND allows Free fields to fall back to defaults if not in DB.
 		$options = array_merge( $free_defaults, $db_options );
+
+		error_log( 'MSC Last Updated: get_option(' . $key . ') - DB has: ' . wp_json_encode( array_keys( $db_options ) ) . ', returning: ' . wp_json_encode( $options[ $key ] ?? null ) );
 
 		return array_key_exists( $key, $options ) ? $options[ $key ] : $default;
 	}
@@ -155,22 +157,11 @@ class Plugin {
 
 		error_log( 'MSC Last Updated: update_options - update_option returned: ' . ( $result ? 'true' : 'false' ) );
 
+		// Clear WordPress cache for this option to ensure fresh reads.
+		wp_cache_delete( self::OPTION_KEY, 'options' );
+		error_log( 'MSC Last Updated: update_options - cache cleared' );
+
 		return $result;
-	}
-
-	/**
-	 * Returns rendered last-updated markup for a post.
-	 *
-	 * @param int                $post_id Post ID.
-	 * @param array<string,mixed> $context Render context.
-	 * @return string
-	 */
-	public function get_last_updated_markup( $post_id = 0, $context = array() ) {
-		if ( ! $this->module instanceof Module ) {
-			return '';
-		}
-
-		return $this->module->get_last_updated_html( $post_id, $context );
 	}
 
 	/**

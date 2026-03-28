@@ -176,6 +176,8 @@ class Settings {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
 		}
+		// Clear cache to ensure fresh options from database
+		wp_cache_delete( Plugin::OPTION_KEY, 'options' );
 
 		$options = array(
 			'module_enabled' => (int) $this->plugin->get_option( 'module_enabled', 1 ),
