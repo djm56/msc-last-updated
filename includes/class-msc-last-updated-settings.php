@@ -208,8 +208,8 @@ class Settings {
 
 			<?php if ( 'settings' === $active_tab ) : ?>
 
-				<div id="col-container" class="wp-clearfix" style="margin-top:1em;">
-					<div id="col-left" style="float:right;width:230px;padding-left:20px;box-sizing:border-box;">
+				<div class="msclu-settings-layout" style="display:flex;gap:20px;align-items:flex-start;margin-top:1em;">
+					<div class="msclu-settings-sidebar" style="width:240px;flex-shrink:0;order:2;">
 						<?php if ( ! $this->plugin->is_pro_active() ) : ?>
 							<div class="postbox">
 								<div class="postbox-header">
@@ -245,9 +245,9 @@ class Settings {
 								</a>
 							</div>
 						</div>
-					</div><!-- #col-left -->
+					</div><!-- .msclu-settings-sidebar -->
 
-					<div id="col-right" style="margin-right:250px;">
+					<div class="msclu-settings-main" style="flex:1;min-width:0;order:1;">
 						<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 							<input type="hidden" name="action" value="msc-last-updated_save_settings" />
 							<?php wp_nonce_field( 'msc-last-updated_save_settings' ); ?>
@@ -363,8 +363,8 @@ class Settings {
 
 							<?php submit_button( __( 'Save Settings', 'msc-last-updated' ) ); ?>
 						</form>
-					</div><!-- #col-right -->
-				</div><!-- #col-container -->
+					</div><!-- .msclu-settings-main -->
+				</div><!-- .msclu-settings-layout -->
 
 			<?php elseif ( 'usage' === $active_tab ) : ?>
 
