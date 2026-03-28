@@ -87,7 +87,11 @@ class Settings {
 			wp_die( esc_html__( 'You do not have permission to access this page.', 'msc-last-updated' ) );
 		}
 
-		check_admin_referer( 'msc-last-updated_save_settings' );
+		// Verify nonce with better error handling.
+		$nonce = isset( $_POST['_wpnonce'] ) ? sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ) : '';
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'msc-last-updated_save_settings' ) ) {
+			wp_die( esc_html__( 'Security check failed. Please try again.', 'msc-last-updated' ) );
+		}
 
 		$module_enabled = isset( $_POST['module_enabled'] ) ? 1 : 0;
 		$post_types     = isset( $_POST['post_types'] ) ? (array) wp_unslash( $_POST['post_types'] ) : array();
