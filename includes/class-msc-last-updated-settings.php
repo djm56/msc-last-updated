@@ -93,6 +93,9 @@ class Settings {
 			wp_die( esc_html__( 'Security check failed. Please try again.', 'msc-last-updated' ) );
 		}
 
+		error_log( 'MSC Last Updated: Settings save initiated' );
+		error_log( 'MSC Last Updated: Full $_POST keys: ' . implode( ', ', array_keys( $_POST ) ) );
+
 		$module_enabled = isset( $_POST['module_enabled'] ) ? 1 : 0;
 		$post_types     = isset( $_POST['post_types'] ) ? (array) wp_unslash( $_POST['post_types'] ) : array();
 		$post_types     = array_values( array_filter( array_map( 'sanitize_key', $post_types ) ) );
@@ -138,6 +141,8 @@ class Settings {
 			'modified_only'  => $modified_only,
 		);
 
+		error_log( 'MSC Last Updated: Base options before filter: ' . wp_json_encode( $options ) );
+
 		/**
 		 * Filters sanitized settings before they are persisted.
 		 *
@@ -146,7 +151,11 @@ class Settings {
 		 */
 		$options = apply_filters( 'msclu_settings_sanitized_options', $options, $_POST );
 
+		error_log( 'MSC Last Updated: Options after filter: ' . wp_json_encode( $options ) );
+
 		$this->plugin->update_options( $options );
+
+		error_log( 'MSC Last Updated: Options saved to database' );
 
 		wp_safe_redirect(
 			add_query_arg(
