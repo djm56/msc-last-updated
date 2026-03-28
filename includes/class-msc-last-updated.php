@@ -118,21 +118,15 @@ class Plugin {
 	/**
 	 * Option getter.
 	 *
-	 * @param string $key Key.
-	 * @param mixed  $default Default value.
+	 * @param string $key     Option key.
+	 * @param mixed  $default Fallback value.
 	 * @return mixed
 	 */
 	public function get_option( $key, $default = null ) {
-		// Get all options from database, then apply Free defaults ONLY for Free keys that are missing.
-		$db_options = (array) get_option( self::OPTION_KEY, array() );
+		$db_options    = (array) get_option( self::OPTION_KEY, array() );
 		$free_defaults = self::default_options();
-
-		// Merge: DB options first (top priority), then fill gaps from defaults.
-		// This preserves Pro fields AND allows Free fields to fall back to defaults if not in DB.
+		// DB values take priority; defaults fill gaps for any unset Free keys.
 		$options = array_merge( $free_defaults, $db_options );
-
-		error_log( 'MSC Last Updated: get_option(' . $key . ') - DB has: ' . wp_json_encode( array_keys( $db_options ) ) . ', returning: ' . wp_json_encode( $options[ $key ] ?? null ) );
-
 		return array_key_exists( $key, $options ) ? $options[ $key ] : $default;
 	}
 
@@ -143,25 +137,10 @@ class Plugin {
 	 * @return bool
 	 */
 	public function update_options( $new_options ) {
-		// Get current options from database WITHOUT applying defaults, to preserve all Pro fields.
+		// Read current row without applying defaults, to preserve any Pro-extended fields.
 		$current = (array) get_option( self::OPTION_KEY, array() );
-		error_log( 'MSC Last Updated: update_options - current from DB: ' . wp_json_encode( $current ) );
-		error_log( 'MSC Last Updated: update_options - new options to merge: ' . wp_json_encode( $new_options ) );
-
-		// Merge new options over current, preserving all existing keys not being overwritten.
-		$merged = array_merge( $current, $new_options );
-
-		error_log( 'MSC Last Updated: update_options - final merged: ' . wp_json_encode( $merged ) );
-
-		$result = (bool) update_option( self::OPTION_KEY, $merged );
-
-		error_log( 'MSC Last Updated: update_options - update_option returned: ' . ( $result ? 'true' : 'false' ) );
-
-		// Clear WordPress cache for this option to ensure fresh reads.
-		wp_cache_delete( self::OPTION_KEY, 'options' );
-		error_log( 'MSC Last Updated: update_options - cache cleared' );
-
-		return $result;
+		$merged  = array_merge( $current, $new_options );
+		return (bool) update_option( self::OPTION_KEY, $merged );
 	}
 
 	/**
