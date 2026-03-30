@@ -83,17 +83,6 @@ class Plugin {
 	private function __construct() {
 		$this->settings = new Settings( $this );
 
-		if ( false ) {
-			$this->analytics = class_exists( __NAMESPACE__ . '\\Plugin_Analytics' ) ? new Plugin_Analytics() : null;
-		}
-
-		if ( false ) {
-			$this->admin_analytics = class_exists( __NAMESPACE__ . '\\Plugin_Admin_Analytics' ) ? new Plugin_Admin_Analytics() : null;
-			if ( is_object( $this->admin_analytics ) && method_exists( $this->admin_analytics, 'hooks' ) ) {
-				$this->admin_analytics->hooks();
-			}
-		}
-
 		$this->module = new Module( $this );
 	}
 

@@ -43,14 +43,6 @@ require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-module.php';
 require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-settings.php';
 require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated.php';
 
-if ( false ) {
-	require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-analytics.php';
-}
-
-if ( false ) {
-	require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-admin-analytics.php';
-}
-
 register_activation_hook(
 	__FILE__,
 	array( 'MSC_Last_Updated\\Plugin', 'activate' )

@@ -83,6 +83,9 @@ Yes. MSC Last Updated Pro adds relative dates ("3 days ago"), a hybrid mode (rel
 
 == Changelog ==
 
+= 1.3.0 =
+* Adds Brazilian and European Portuguese translations. No functional changes.
+
 = 1.2.0 =
 * Fixed: Admin settings page redirect URL pointed to `admin.php` instead of `options-general.php`; success notice now appears correctly after saving.
 * Fixed: Label template without `%s` was silently replaced with the default `Updated %s`; it now renders as-is.
