@@ -3,7 +3,7 @@
  * Module class for MSC Last Updated.
  */
 
-namespace MSC_Last_Updated;
+namespace MSCLU;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

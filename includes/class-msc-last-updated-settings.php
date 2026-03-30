@@ -2,10 +2,10 @@
 /**
  * Admin settings class for MSC Last Updated.
  *
- * @package MSC_Last_Updated
+ * @package MSCLU
  */
 
-namespace MSC_Last_Updated;
+namespace MSCLU;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -94,8 +94,7 @@ class Settings {
 		}
 
 		$module_enabled = isset( $_POST['module_enabled'] ) ? 1 : 0;
-		$post_types     = isset( $_POST['post_types'] ) ? (array) wp_unslash( $_POST['post_types'] ) : array();
-		$post_types     = array_values( array_filter( array_map( 'sanitize_key', $post_types ) ) );
+		$post_types     = isset( $_POST['post_types'] ) ? array_values( array_filter( array_map( 'sanitize_key', wp_unslash( (array) $_POST['post_types'] ) ) ) ) : array();
 		$post_type_mode = isset( $_POST['post_type_mode'] ) ? sanitize_key( wp_unslash( $_POST['post_type_mode'] ) ) : 'include';
 		$position       = isset( $_POST['position'] ) ? sanitize_key( wp_unslash( $_POST['position'] ) ) : 'after';
 		// translators: %s is the formatted post last-updated date.

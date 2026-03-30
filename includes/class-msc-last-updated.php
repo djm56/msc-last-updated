@@ -3,7 +3,7 @@
  * Main bootstrap class for MSC Last Updated.
  */
 
-namespace MSC_Last_Updated;
+namespace MSCLU;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -139,10 +139,7 @@ class Plugin {
 	 * @return bool
 	 */
 	public function is_pro_active() {
-		$legacy = (bool) apply_filters( 'msc-last-updated_pro_active', false );
-		$current = (bool) apply_filters( 'msclu_pro_active', false );
-
-		return $legacy || $current;
+		return (bool) apply_filters( 'msclu_pro_active', false );
 	}
 
 	/**
