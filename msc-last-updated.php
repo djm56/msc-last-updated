@@ -5,7 +5,6 @@
  * Description: Display and control the post last-updated date in flexible positions.
  * Version: 1.3.0
  * Author: Anomalous Developers
- * Author URI: https://anomalous.co.za
  * Text Domain: msc-last-updated
  * Domain Path: /languages
  * Requires at least: 5.9
