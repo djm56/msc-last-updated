@@ -41,8 +41,8 @@ class Settings {
 	 */
 	public function register_menu() {
 		add_options_page(
-			esc_html__( 'MSC Last Updated', 'msc-last-updated' ),
-			esc_html__( 'MSC Last Updated', 'msc-last-updated' ),
+			esc_html__( 'MSC Post Last Updated Date', 'msc-last-updated' ),
+			esc_html__( 'MSC Post Last Updated Date', 'msc-last-updated' ),
 			'manage_options',
 			'msclu-settings',
 			array( $this, 'render_page' )
@@ -192,7 +192,7 @@ class Settings {
 		$tab_url_usage    = add_query_arg( array( 'page' => 'msclu-settings', 'tab' => 'usage' ), admin_url( 'options-general.php' ) );
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'MSC Last Updated', 'msc-last-updated' ); ?></h1>
+			<h1><?php esc_html_e( 'MSC Post Last Updated Date', 'msc-last-updated' ); ?></h1>
 
 			<?php // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only success notice flag. ?>
 			<?php if ( isset( $_GET['updated'] ) && '1' === $_GET['updated'] ) : ?>
@@ -212,28 +212,6 @@ class Settings {
 
 				<div class="msclu-settings-layout" style="display:flex;gap:20px;align-items:flex-start;margin-top:1em;">
 					<div class="msclu-settings-sidebar" style="width:240px;flex-shrink:0;order:2;">
-						<?php if ( ! $this->plugin->is_pro_active() ) : ?>
-							<div class="postbox">
-								<div class="postbox-header">
-									<h2 class="hndle" style="font-size:14px;padding:8px 12px;">
-										<?php esc_html_e( 'Upgrade to Pro', 'msc-last-updated' ); ?>
-									</h2>
-								</div>
-								<div class="inside">
-									<p><?php esc_html_e( 'Unlock powerful extras:', 'msc-last-updated' ); ?></p>
-									<ul style="list-style:disc;padding-left:1.2em;margin:0 0 12px;">
-										<li><?php esc_html_e( 'Relative dates (e.g. "3 days ago")', 'msc-last-updated' ); ?></li>
-										<li><?php esc_html_e( 'Hybrid mode — relative then absolute', 'msc-last-updated' ); ?></li>
-										<li><?php esc_html_e( 'Style presets (muted, pill, badge)', 'msc-last-updated' ); ?></li>
-										<li><?php esc_html_e( 'Per-post override (show/hide/global)', 'msc-last-updated' ); ?></li>
-										<li><?php esc_html_e( 'Shortcode with per-instance overrides', 'msc-last-updated' ); ?></li>
-									</ul>
-									<a class="button button-primary" style="width:100%;text-align:center;box-sizing:border-box;" href="https://anomalous.co.za" target="_blank" rel="noopener noreferrer">
-										<?php esc_html_e( 'View Pro Features', 'msc-last-updated' ); ?>
-									</a>
-								</div>
-							</div>
-						<?php endif; ?>
 						<div class="postbox">
 							<div class="postbox-header">
 								<h2 class="hndle" style="font-size:14px;padding:8px 12px;">

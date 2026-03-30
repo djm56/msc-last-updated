@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Micro Site Care: Last Updated 1.3.0\n"
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/msc-last-updated\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: msc-last-updated.php
-msgid "Micro Site Care: Last Updated"
+msgid "Micro Site Care: Post Last Updated Date"
 msgstr ""
 
 #. Plugin URI of the plugin

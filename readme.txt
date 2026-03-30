@@ -1,4 +1,4 @@
-=== Micro Site Care: Last Updated ===
+=== Micro Site Care: Post Last Updated Date ===
 Contributors: anomalous
 Tags: last updated, last modified, post date, content date, editorial
 Requires at least: 5.9
@@ -12,7 +12,7 @@ Display and control the last-updated date for your WordPress posts and pages, wi
 
 == Description ==
 
-MSC Last Updated adds a last-updated date label to your posts and pages. It is lightweight, uses no JavaScript, and integrates cleanly with any theme.
+Micro Site Care: Post Last Updated Date adds a last-updated date label to your posts and pages. It is lightweight, uses no JavaScript, and integrates cleanly with any theme.
 
 **Key features:**
 
@@ -24,19 +24,19 @@ MSC Last Updated adds a last-updated date label to your posts and pages. It is l
 * Target specific post types, or exclude selected post types from an all-types baseline.
 * Clean HTML5 `<time>` element output with an ISO 8601 `datetime` attribute for SEO and screen readers.
 * Developer-friendly: four filter hooks to customise visibility, label, CSS classes, and final HTML output.
-* Compatible with MSC Last Updated Pro for relative dates, style presets, per-post overrides, and shortcodes.
+* Compatible with MSC Post Last Updated Date Pro for relative dates, style presets, per-post overrides, and shortcodes.
 
 == Installation ==
 
 1. Upload the `msc-last-updated` folder to the `/wp-content/plugins/` directory, or install directly from the WordPress plugin screen.
 2. Activate the plugin through the **Plugins** screen in WordPress.
-3. Go to **Settings → MSC Last Updated** to configure the plugin.
+3. Go to **Settings → MSC Post Last Updated Date** to configure the plugin.
 
 == Frequently Asked Questions ==
 
 = The label is not appearing on my posts. What should I check? =
 
-1. Go to **Settings → MSC Last Updated** and confirm **Enable output** is ticked.
+1. Go to **Settings → MSC Post Last Updated Date** and confirm **Enable output** is ticked.
 2. Make sure the relevant post type (e.g. Post or Page) is selected in the **Post types** list.
 3. If **Only show when modified date differs from publish date** is ticked, the label will only appear on posts that have been edited after their original publish date.
 4. If **Automatic placement** is set to **Manual only**, nothing is injected automatically — you need to add the template tag to your theme.
@@ -73,7 +73,7 @@ Yes. All registered public post types appear in the **Post types** list on the s
 
 = Is there a Pro version? =
 
-Yes. MSC Last Updated Pro adds relative dates ("3 days ago"), a hybrid mode (relative then absolute after a configurable threshold), style presets (muted, pill, badge), per-post show/hide overrides via a metabox, and a shortcode with per-instance attribute overrides.
+Yes. MSC Post Last Updated Date Pro adds relative dates ("3 days ago"), a hybrid mode (relative then absolute after a configurable threshold), style presets (muted, pill, badge), per-post show/hide overrides via a metabox, and a shortcode with per-instance attribute overrides.
 
 == Screenshots ==
 

@@ -1,4 +1,4 @@
-# MSC Last Updated
+# Micro Site Care: Post Last Updated Date
 
 Display and control the post last-updated date in flexible positions.
 
@@ -15,7 +15,7 @@ Display and control the post last-updated date in flexible positions.
 - **Include** specific post types or **exclude** selected types from an all-types baseline.
 - Clean HTML5 `<time>` element output with an ISO 8601 `datetime` attribute for SEO and accessibility.
 - Four developer filter hooks to customise visibility, label text, CSS classes, and final HTML output.
-- Designed for extension by **MSC Last Updated Pro** (relative dates, style presets, per-post overrides, shortcode with attribute overrides).
+- Designed for extension by **MSC Post Last Updated Date Pro** (relative dates, style presets, per-post overrides, shortcode with attribute overrides).
 
 ---
 

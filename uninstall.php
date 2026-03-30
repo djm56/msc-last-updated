@@ -1,6 +1,6 @@
 <?php
 /**
- * Uninstall MSC Last Updated.
+ * Uninstall Micro Site Care: Post Last Updated Date.
  *
  * @return void
  */
