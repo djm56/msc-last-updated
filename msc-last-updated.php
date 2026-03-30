@@ -3,7 +3,7 @@
  * Plugin Name: Micro Site Care: Last Updated
  * Plugin URI: https://anomalous.co.za
  * Description: Display and control the post last-updated date in flexible positions.
- * Version: 1.0.0
+ * Version: 1.3.0
  * Author: Anomalous Developers
  * Author URI: https://anomalous.co.za
  * Text Domain: msc-last-updated
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Current plugin version.
  */
-define( 'MSCLU_PLUGIN_VERSION', '1.0.0' );
+define( 'MSCLU_PLUGIN_VERSION', '1.3.0' );
 
 /**
  * Absolute path to the main plugin file.

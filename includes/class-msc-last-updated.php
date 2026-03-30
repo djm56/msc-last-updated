@@ -108,6 +108,7 @@ class Plugin {
 			'post_types'     => array( 'post', 'page' ),
 			'post_type_mode' => 'include',
 			'position'       => 'after',
+			// translators: %s is the formatted post last-updated date.
 			'label_text'     => __( 'Updated %s', 'msc-last-updated' ),
 			'date_mode'      => 'site',
 			'custom_format'  => 'F j, Y',

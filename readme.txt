@@ -4,7 +4,7 @@ Tags: last updated, last modified, post date, content date, editorial
 Requires at least: 5.9
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.3.0
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,14 @@ Yes. MSC Last Updated Pro adds relative dates ("3 days ago"), a hybrid mode (rel
 
 == Changelog ==
 
+= 1.2.0 =
+* Fixed: Admin settings page redirect URL pointed to `admin.php` instead of `options-general.php`; success notice now appears correctly after saving.
+* Fixed: Label template without `%s` was silently replaced with the default `Updated %s`; it now renders as-is.
+* Added: Dedicated Usage &amp; Support documentation tab with template tag reference, label examples, date format quick-reference, FAQ, and support link.
+* Added: Upgrade to Pro and Support sidebar panels on the Settings tab.
+* Removed: Debug `error_log()` calls from all Free plugin files.
+* Removed: Unnecessary `wp_cache_delete()` calls.
+
 = 1.0.0 =
 * Initial public release.
 * Automatic content injection with before, after, both, and manual placement modes.
@@ -96,6 +104,12 @@ Yes. MSC Last Updated Pro adds relative dates ("3 days ago"), a hybrid mode (rel
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Adds Brazilian and European Portuguese translations. No functional changes.
+
+= 1.2.0 =
+Fixes settings-save redirect and label template behaviour. Adds Usage & Support documentation tab and redesigned settings layout.
 
 = 1.0.0 =
 Initial plugin release.

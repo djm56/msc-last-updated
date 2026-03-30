@@ -1,0 +1,286 @@
+# European Portuguese translation for MSC Last Updated.
+# Copyright (C) 2026 Anomalous Developers
+# This file is distributed under the same license as the MSC Last Updated plugin.
+# Anomalous Developers <support@anomalous.co.za>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MSC Last Updated 1.3.0\n"
+"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
+"Language-Team: European Portuguese <support@anomalous.co.za>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: msc-last-updated\n"
+
+msgid "Updated %s"
+msgstr "Atualizado %s"
+
+msgid "MSC Last Updated"
+msgstr "MSC Última Atualização"
+
+msgid "Micro Site Care: Last Updated"
+msgstr "Micro Site Care: Última Atualização"
+
+msgid "Display and control the post last-updated date in flexible positions."
+msgstr "Apresente e controle a data da última atualização das publicações em posições flexíveis."
+
+msgid "Settings saved."
+msgstr "Definições guardadas."
+
+msgid "You do not have permission to access this page."
+msgstr "Não tem permissão para aceder a esta página."
+
+msgid "Security check failed. Please try again."
+msgstr "Verificação de segurança falhou. Tente novamente."
+
+msgid "Enable output"
+msgstr "Ativar saída"
+
+msgid "Show Last Updated date on enabled post types."
+msgstr "Mostrar a data da última atualização nos tipos de publicação activos."
+
+msgid "Automatic placement"
+msgstr "Posicionamento automático"
+
+msgid "After content"
+msgstr "Após o conteúdo"
+
+msgid "Before content"
+msgstr "Antes do conteúdo"
+
+msgid "Before and after content"
+msgstr "Antes e após o conteúdo"
+
+msgid "Manual only (template tag)"
+msgstr "Apenas manual (tag de template)"
+
+msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
+msgstr "Use Apenas manual para posicionar a saída via tag de template no seu tema. Consulte o separador Uso e Suporte para exemplos."
+
+msgid "Label template"
+msgstr "Modelo do rótulo"
+
+msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
+msgstr "Use %1$s onde a data deve aparecer, ex.: %2$s. Omita %1$s para apresentar o rótulo sem data."
+
+msgid "Date format source"
+msgstr "Fonte do formato de data"
+
+msgid "Use WordPress site date format"
+msgstr "Usar o formato de data do site WordPress"
+
+msgid "Use custom date format"
+msgstr "Usar formato de data personalizado"
+
+msgid "Custom date format"
+msgstr "Formato de data personalizado"
+
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr "Usado apenas quando a Fonte do formato de data está definida como Personalizado. Predefinição: F j, Y"
+
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "O formato personalizado utiliza os tokens de data PHP do WordPress. %s"
+
+msgid "Visibility condition"
+msgstr "Condição de visibilidade"
+
+msgid "Only show when modified date differs from publish date"
+msgstr "Mostrar apenas quando a data de modificação diferir da data de publicação"
+
+msgid "Only show when modified date differs from publish date."
+msgstr "Mostrar apenas quando a data de modificação diferir da data de publicação."
+
+msgid "Post type mode"
+msgstr "Modo de tipo de publicação"
+
+msgid "Show only on selected post types"
+msgstr "Mostrar apenas nos tipos de publicação seleccionados"
+
+msgid "Show on all public post types except selected"
+msgstr "Mostrar em todos os tipos de publicação públicos, excepto os seleccionados"
+
+msgid "Post types"
+msgstr "Tipos de publicação"
+
+msgid "Save Settings"
+msgstr "Guardar definições"
+
+msgid "Upgrade to Pro"
+msgstr "Atualizar para Pro"
+
+msgid "Unlock powerful extras:"
+msgstr "Desbloqueie funcionalidades extra:"
+
+msgid "Relative dates (e.g. \"3 days ago\")"
+msgstr "Datas relativas (ex.: \"há 3 dias\")"
+
+msgid "Hybrid mode — relative then absolute"
+msgstr "Modo híbrido — relativo e depois absoluto"
+
+msgid "Style presets (muted, pill, badge)"
+msgstr "Predefinições de estilo (suave, pílula, emblema)"
+
+msgid "Per-post override (show/hide/global)"
+msgstr "Substituição por publicação (mostrar/ocultar/global)"
+
+msgid "Shortcode with per-instance overrides"
+msgstr "Shortcode com substituições por instância"
+
+msgid "View Pro Features"
+msgstr "Ver funcionalidades Pro"
+
+msgid "Support"
+msgstr "Suporte"
+
+msgid "Questions, bugs, or setup help?"
+msgstr "Dúvidas, erros ou ajuda na configuração?"
+
+msgid "Get Support"
+msgstr "Obter suporte"
+
+msgid "Automatic Injection"
+msgstr "Injeção automática"
+
+msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
+msgstr "Quando um modo de posicionamento diferente de Apenas manual é seleccionado, o plugin injeta automaticamente o rótulo de última atualização no conteúdo singular de publicação/página via o filtro the_content."
+
+msgid "Mode"
+msgstr "Modo"
+
+msgid "Expected output position"
+msgstr "Posição de saída esperada"
+
+msgid "Label appears below the post body."
+msgstr "O rótulo aparece abaixo do corpo da publicação."
+
+msgid "Label appears above the post body."
+msgstr "O rótulo aparece acima do corpo da publicação."
+
+msgid "Before and after"
+msgstr "Antes e depois"
+
+msgid "Label appears both above and below the post body."
+msgstr "O rótulo aparece tanto acima como abaixo do corpo da publicação."
+
+msgid "Manual only"
+msgstr "Apenas manual"
+
+msgid "Nothing is injected automatically. Use the template tag below in your theme file."
+msgstr "Nada é injectado automaticamente. Use a tag de template abaixo no seu ficheiro de tema."
+
+msgid "Label Template"
+msgstr "Modelo do rótulo"
+
+msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
+msgstr "A definição Modelo do rótulo controla o texto apresentado. Use %s como marcador de posição da data."
+
+msgid "Template setting"
+msgstr "Configuração do modelo"
+
+msgid "Example frontend output"
+msgstr "Exemplo de saída no frontend"
+
+msgid "Updated March 28, 2026"
+msgstr "Atualizado em 28 de março de 2026"
+
+msgid "Last checked: March 28, 2026"
+msgstr "Última verificação: 28 de março de 2026"
+
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "Conteúdo em dia  (sem data anexada — apresentado como está)"
+
+msgid "Template Tags"
+msgstr "Tags de template"
+
+msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
+msgstr "Use estas funções PHP em qualquer local do seu tema quando o posicionamento for Apenas manual."
+
+msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr "Apresenta o HTML renderizado directamente. Use dentro do Loop ou passe um ID de publicação."
+
+msgid "Expected HTML output:"
+msgstr "Saída HTML esperada:"
+
+msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
+msgstr "Devolve a string HTML renderizada em vez de a apresentar directamente. Útil para manipulação adicional."
+
+msgid "Date Format Reference"
+msgstr "Referência de formato de data"
+
+msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
+msgstr "Ao usar um formato de data personalizado, os mesmos tokens de data PHP utilizados pelo WordPress aplicam-se. %s"
+
+msgid "View full format reference &rarr;"
+msgstr "Ver referência completa de formato &rarr;"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Example output"
+msgstr "Exemplo de saída"
+
+msgid "March 28, 2026"
+msgstr "28 de março de 2026"
+
+msgid "28/03/2026"
+msgstr "28/03/2026"
+
+msgid "28 Mar 2026"
+msgstr "28 mar 2026"
+
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+msgid "Format reference"
+msgstr "Referência de formato"
+
+msgid "Frequently Asked Questions"
+msgstr "Perguntas Frequentes"
+
+msgid "The label is not appearing on my posts."
+msgstr "O rótulo não está a aparecer nas minhas publicações."
+
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "Verifique se Ativar saída está marcado no separador Definições."
+
+msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
+msgstr "Verifique se o tipo de publicação (ex.: Post, Página) está seleccionado na lista de Tipos de publicação."
+
+msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
+msgstr "Se %s estiver marcado, o rótulo só será apresentado quando o artigo tiver sido editado após a sua data de publicação original."
+
+msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
+msgstr "Se Posicionamento automático estiver definido como Apenas manual, nada é injectado automaticamente — adicione a tag de template ao seu tema."
+
+msgid "How do I place the label exactly where I want it?"
+msgstr "Como posiciono o rótulo exactamente onde quero?"
+
+msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
+msgstr "Defina Posicionamento automático como %1$s no separador Definições e adicione %2$s no template do seu tema onde pretender que o rótulo apareça."
+
+msgid "Can I show just a static label with no date?"
+msgstr "Posso mostrar apenas um rótulo estático sem data?"
+
+msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
+msgstr "Sim. Remova %s do Modelo do rótulo. O texto será apresentado como está, sem data anexada."
+
+msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
+msgstr "Se precisar de ajuda com a configuração, encontrou um erro ou deseja solicitar uma funcionalidade, entre em contacto."
+
+msgid "Settings"
+msgstr "Definições"
+
+msgid "Usage &amp; Support"
+msgstr "Uso e Suporte"
+
+msgid "Anomalous Developers"
+msgstr "Anomalous Developers"
+
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"

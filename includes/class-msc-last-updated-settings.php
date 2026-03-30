@@ -98,6 +98,7 @@ class Settings {
 		$post_types     = array_values( array_filter( array_map( 'sanitize_key', $post_types ) ) );
 		$post_type_mode = isset( $_POST['post_type_mode'] ) ? sanitize_key( wp_unslash( $_POST['post_type_mode'] ) ) : 'include';
 		$position       = isset( $_POST['position'] ) ? sanitize_key( wp_unslash( $_POST['position'] ) ) : 'after';
+		// translators: %s is the formatted post last-updated date.
 		$label_text     = isset( $_POST['label_text'] ) ? sanitize_text_field( wp_unslash( $_POST['label_text'] ) ) : __( 'Updated %s', 'msc-last-updated' );
 		$date_mode      = isset( $_POST['date_mode'] ) ? sanitize_key( wp_unslash( $_POST['date_mode'] ) ) : 'site';
 		$custom_format  = isset( $_POST['custom_format'] ) ? sanitize_text_field( wp_unslash( $_POST['custom_format'] ) ) : 'F j, Y';
@@ -120,6 +121,7 @@ class Settings {
 		}
 
 		if ( '' === $label_text ) {
+			// translators: %s is the formatted post last-updated date.
 			$label_text = __( 'Updated %s', 'msc-last-updated' );
 		}
 
@@ -172,6 +174,7 @@ class Settings {
 			'post_types'     => (array) $this->plugin->get_option( 'post_types', array( 'post', 'page' ) ),
 			'post_type_mode' => (string) $this->plugin->get_option( 'post_type_mode', 'include' ),
 			'position'       => (string) $this->plugin->get_option( 'position', 'after' ),
+			// translators: %s is the formatted post last-updated date.
 			'label_text'     => (string) $this->plugin->get_option( 'label_text', __( 'Updated %s', 'msc-last-updated' ) ),
 			'date_mode'      => (string) $this->plugin->get_option( 'date_mode', 'site' ),
 			'custom_format'  => (string) $this->plugin->get_option( 'custom_format', 'F j, Y' ),
@@ -281,12 +284,11 @@ class Settings {
 											<input id="label_text" name="label_text" type="text" class="regular-text" value="<?php echo esc_attr( $options['label_text'] ); ?>" />
 											<p class="description">
 												<?php
-												/* translators: %s is a literal placeholder token, shown verbatim */
 												printf(
-													esc_html__( 'Use %s where the date should appear, e.g. %s. Omit %s to show the label with no date.', 'msc-last-updated' ),
+													/* translators: 1: literal %s token shown as code, 2: example label shown as code */
+													esc_html__( 'Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date.', 'msc-last-updated' ),
 													'<code>%s</code>',
-													'<code>Updated %s</code>',
-													'<code>%s</code>'
+													'<code>Updated %s</code>'
 												);
 												?>
 											</p>
