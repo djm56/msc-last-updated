@@ -1,0 +1,286 @@
+# Italian translation for Micro Site Care: Post Last Updated Date.
+# Copyright (C) 2026 Anomalous Developers
+# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
+# Anomalous Developers <support@anomalous.co.za>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
+"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
+"Language-Team: Italian <support@anomalous.co.za>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: micro-site-care-post-last-updated-date\n"
+
+msgid "Updated %s"
+msgstr "Aggiornato %s"
+
+msgid "MSC Post Last Updated Date"
+msgstr "MSC Data Ultimo Aggiornamento"
+
+msgid "Micro Site Care: Post Last Updated Date"
+msgstr "Micro Site Care: Data Ultimo Aggiornamento del Post"
+
+msgid "Display and control the post last-updated date in flexible positions."
+msgstr "Visualizza e controlla la data dell'ultimo aggiornamento dei post in posizioni flessibili."
+
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+msgid "You do not have permission to access this page."
+msgstr "Non hai il permesso di accedere a questa pagina."
+
+msgid "Security check failed. Please try again."
+msgstr "Controllo di sicurezza fallito. Riprova."
+
+msgid "Enable output"
+msgstr "Attiva output"
+
+msgid "Show Last Updated date on enabled post types."
+msgstr "Mostra la data dell'ultimo aggiornamento sui tipi di post abilitati."
+
+msgid "Automatic placement"
+msgstr "Posizionamento automatico"
+
+msgid "After content"
+msgstr "Dopo il contenuto"
+
+msgid "Before content"
+msgstr "Prima del contenuto"
+
+msgid "Before and after content"
+msgstr "Prima e dopo il contenuto"
+
+msgid "Manual only (template tag)"
+msgstr "Solo manuale (tag template)"
+
+msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
+msgstr "Usa Solo manuale per posizionare l'output tramite il tag template nel tuo tema. Consulta la scheda Uso e Supporto per esempi."
+
+msgid "Label template"
+msgstr "Modello etichetta"
+
+msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
+msgstr "Usa %1$s dove deve apparire la data, es. %2$s. Ometti %1$s per mostrare l'etichetta senza data."
+
+msgid "Date format source"
+msgstr "Fonte formato data"
+
+msgid "Use WordPress site date format"
+msgstr "Usa il formato data del sito WordPress"
+
+msgid "Use custom date format"
+msgstr "Usa formato data personalizzato"
+
+msgid "Custom date format"
+msgstr "Formato data personalizzato"
+
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr "Usato solo quando la Fonte formato data è impostata su Personalizzato. Predefinito: F j, Y"
+
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "Il formato personalizzato usa i token di formato data PHP di WordPress. %s"
+
+msgid "Visibility condition"
+msgstr "Condizione di visibilità"
+
+msgid "Only show when modified date differs from publish date"
+msgstr "Mostra solo quando la data di modifica differisce dalla data di pubblicazione"
+
+msgid "Only show when modified date differs from publish date."
+msgstr "Mostra solo quando la data di modifica differisce dalla data di pubblicazione."
+
+msgid "Post type mode"
+msgstr "Modalità tipo post"
+
+msgid "Show only on selected post types"
+msgstr "Mostra solo sui tipi di post selezionati"
+
+msgid "Show on all public post types except selected"
+msgstr "Mostra su tutti i tipi di post pubblici eccetto quelli selezionati"
+
+msgid "Post types"
+msgstr "Tipi di post"
+
+msgid "Save Settings"
+msgstr "Salva impostazioni"
+
+msgid "Upgrade to Pro"
+msgstr "Aggiorna a Pro"
+
+msgid "Unlock powerful extras:"
+msgstr "Sblocca funzionalità potenti:"
+
+msgid "Relative dates (e.g. \"3 days ago\")"
+msgstr "Date relative (es. \"3 giorni fa\")"
+
+msgid "Hybrid mode — relative then absolute"
+msgstr "Modalità ibrida — relativa poi assoluta"
+
+msgid "Style presets (muted, pill, badge)"
+msgstr "Preset di stile (discreto, pillola, badge)"
+
+msgid "Per-post override (show/hide/global)"
+msgstr "Override per post (mostra/nascondi/globale)"
+
+msgid "Shortcode with per-instance overrides"
+msgstr "Shortcode con override per istanza"
+
+msgid "View Pro Features"
+msgstr "Vedi funzionalità Pro"
+
+msgid "Support"
+msgstr "Supporto"
+
+msgid "Questions, bugs, or setup help?"
+msgstr "Domande, bug o aiuto con la configurazione?"
+
+msgid "Get Support"
+msgstr "Ottieni supporto"
+
+msgid "Automatic Injection"
+msgstr "Iniezione automatica"
+
+msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
+msgstr "Quando è selezionata una modalità di posizionamento diversa da Solo manuale, il plugin inietta automaticamente l'etichetta dell'ultimo aggiornamento nel contenuto singolo post/pagina tramite il filtro the_content."
+
+msgid "Mode"
+msgstr "Modalità"
+
+msgid "Expected output position"
+msgstr "Posizione output prevista"
+
+msgid "Label appears below the post body."
+msgstr "L'etichetta appare sotto il corpo del post."
+
+msgid "Label appears above the post body."
+msgstr "L'etichetta appare sopra il corpo del post."
+
+msgid "Before and after"
+msgstr "Prima e dopo"
+
+msgid "Label appears both above and below the post body."
+msgstr "L'etichetta appare sia sopra che sotto il corpo del post."
+
+msgid "Manual only"
+msgstr "Solo manuale"
+
+msgid "Nothing is injected automatically. Use the template tag below in your theme file."
+msgstr "Non viene iniettato nulla automaticamente. Usa il tag template qui sotto nel file del tuo tema."
+
+msgid "Label Template"
+msgstr "Modello etichetta"
+
+msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
+msgstr "L'impostazione Modello etichetta controlla il testo visualizzato. Usa %s come segnaposto per la data."
+
+msgid "Template setting"
+msgstr "Impostazione template"
+
+msgid "Example frontend output"
+msgstr "Esempio output frontend"
+
+msgid "Updated March 28, 2026"
+msgstr "Aggiornato il 28 marzo 2026"
+
+msgid "Last checked: March 28, 2026"
+msgstr "Ultima verifica: 28 marzo 2026"
+
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "Contenuto fresco (nessuna data aggiunta — visualizzato così com'è)"
+
+msgid "Template Tags"
+msgstr "Tag template"
+
+msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
+msgstr "Usa queste funzioni PHP ovunque nel tuo tema quando il posizionamento è impostato su Manuale."
+
+msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr "Riproduce l'HTML renderizzato direttamente. Usa all'interno del Loop o passa un ID post."
+
+msgid "Expected HTML output:"
+msgstr "Output HTML previsto:"
+
+msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
+msgstr "Restituisce la stringa HTML renderizzata invece di echeggiarla. Utile per ulteriori manipolazioni."
+
+msgid "Date Format Reference"
+msgstr "Riferimento formato data"
+
+msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
+msgstr "Quando si usa un formato data personalizzato, si applicano gli stessi token di data PHP usati da WordPress. %s"
+
+msgid "View full format reference &rarr;"
+msgstr "Vedi riferimento completo formato &rarr;"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Example output"
+msgstr "Esempio output"
+
+msgid "March 28, 2026"
+msgstr "28 marzo 2026"
+
+msgid "28/03/2026"
+msgstr "28/03/2026"
+
+msgid "28 Mar 2026"
+msgstr "28 Mar 2026"
+
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+msgid "Format reference"
+msgstr "Riferimento formato"
+
+msgid "Frequently Asked Questions"
+msgstr "Domande Frequenti"
+
+msgid "The label is not appearing on my posts."
+msgstr "L'etichetta non appare nei miei post."
+
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "Verifica che Attiva output sia spuntato nella scheda Impostazioni."
+
+msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
+msgstr "Verifica che il tipo di post (es. Articolo, Pagina) sia selezionato nell'elenco Tipi di post."
+
+msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
+msgstr "Se %s è spuntato, l'etichetta verrà mostrata solo quando l'articolo sarà stato modificato dopo la sua data di pubblicazione originale."
+
+msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
+msgstr "Se il Posizionamento automatico è impostato su Manuale, non viene iniettato nulla automaticamente — aggiungi il tag template al tuo tema."
+
+msgid "How do I place the label exactly where I want it?"
+msgstr "Come posiziono l'etichetta esattamente dove voglio?"
+
+msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
+msgstr "Imposta il Posizionamento automatico su %1$s nella scheda Impostazioni, poi aggiungi %2$s nel template del tuo tema dove vuoi che appaia l'etichetta."
+
+msgid "Can I show just a static label with no date?"
+msgstr "Posso mostrare solo un'etichetta statica senza data?"
+
+msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
+msgstr "Sì. Rimuovi %s dal Modello etichetta. Il testo verrà output così com'è senza data aggiunta."
+
+msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
+msgstr "Se hai bisogno di aiuto con la configurazione, hai trovato un bug o vuoi richiedere una funzionalità, contattaci."
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Usage &amp; Support"
+msgstr "Uso e Supporto"
+
+msgid "Anomalous Developers"
+msgstr "Anomalous Developers"
+
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"

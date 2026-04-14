@@ -1,0 +1,286 @@
+# Spanish (Mexico) translation for Micro Site Care: Post Last Updated Date.
+# Copyright (C) 2026 Anomalous Developers
+# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
+# Anomalous Developers <support@anomalous.co.za>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
+"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
+"Language-Team: Spanish (Mexico) <support@anomalous.co.za>\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: micro-site-care-post-last-updated-date\n"
+
+msgid "Updated %s"
+msgstr "Actualizado %s"
+
+msgid "MSC Post Last Updated Date"
+msgstr "MSC Fecha de Última Actualización"
+
+msgid "Micro Site Care: Post Last Updated Date"
+msgstr "Micro Site Care: Fecha de Última Actualización de la Publicación"
+
+msgid "Display and control the post last-updated date in flexible positions."
+msgstr "Muestra y controla la fecha de última actualización de las publicaciones en posiciones flexibles."
+
+msgid "Settings saved."
+msgstr "Configuración guardada."
+
+msgid "You do not have permission to access this page."
+msgstr "No tienes permiso para acceder a esta página."
+
+msgid "Security check failed. Please try again."
+msgstr "La verificación de seguridad falló. Inténtalo de nuevo."
+
+msgid "Enable output"
+msgstr "Activar salida"
+
+msgid "Show Last Updated date on enabled post types."
+msgstr "Mostrar la fecha de última actualización en los tipos de contenido habilitados."
+
+msgid "Automatic placement"
+msgstr "Colocación automática"
+
+msgid "After content"
+msgstr "Después del contenido"
+
+msgid "Before content"
+msgstr "Antes del contenido"
+
+msgid "Before and after content"
+msgstr "Antes y después del contenido"
+
+msgid "Manual only (template tag)"
+msgstr "Solo manual (etiqueta de plantilla)"
+
+msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
+msgstr "Usa Solo manual para colocar la salida mediante la etiqueta de plantilla en tu tema. Consulta la pestaña Uso y Soporte para ver ejemplos."
+
+msgid "Label template"
+msgstr "Plantilla de etiqueta"
+
+msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
+msgstr "Usa %1$s donde deba aparecer la fecha, ej. %2$s. Omite %1$s para mostrar la etiqueta sin fecha."
+
+msgid "Date format source"
+msgstr "Fuente del formato de fecha"
+
+msgid "Use WordPress site date format"
+msgstr "Usar el formato de fecha del sitio WordPress"
+
+msgid "Use custom date format"
+msgstr "Usar formato de fecha personalizado"
+
+msgid "Custom date format"
+msgstr "Formato de fecha personalizado"
+
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr "Solo se usa cuando la Fuente del formato de fecha está establecida en Personalizado. Predeterminado: F j, Y"
+
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "El formato personalizado usa los tokens de fecha PHP de WordPress. %s"
+
+msgid "Visibility condition"
+msgstr "Condición de visibilidad"
+
+msgid "Only show when modified date differs from publish date"
+msgstr "Mostrar solo cuando la fecha de modificación difiera de la fecha de publicación"
+
+msgid "Only show when modified date differs from publish date."
+msgstr "Mostrar solo cuando la fecha de modificación difiera de la fecha de publicación."
+
+msgid "Post type mode"
+msgstr "Modo de tipo de contenido"
+
+msgid "Show only on selected post types"
+msgstr "Mostrar solo en los tipos de contenido seleccionados"
+
+msgid "Show on all public post types except selected"
+msgstr "Mostrar en todos los tipos de contenido públicos excepto los seleccionados"
+
+msgid "Post types"
+msgstr "Tipos de contenido"
+
+msgid "Save Settings"
+msgstr "Guardar configuración"
+
+msgid "Upgrade to Pro"
+msgstr "Actualizar a Pro"
+
+msgid "Unlock powerful extras:"
+msgstr "Desbloquea funciones potentes:"
+
+msgid "Relative dates (e.g. \"3 days ago\")"
+msgstr "Fechas relativas (ej.: \"hace 3 días\")"
+
+msgid "Hybrid mode — relative then absolute"
+msgstr "Modo híbrido — relativo y luego absoluto"
+
+msgid "Style presets (muted, pill, badge)"
+msgstr "Estilos predefinidos (suave, pastilla, insignia)"
+
+msgid "Per-post override (show/hide/global)"
+msgstr "Override por publicación (mostrar/ocultar/global)"
+
+msgid "Shortcode with per-instance overrides"
+msgstr "Shortcode con overrides por instancia"
+
+msgid "View Pro Features"
+msgstr "Ver funciones Pro"
+
+msgid "Support"
+msgstr "Soporte"
+
+msgid "Questions, bugs, or setup help?"
+msgstr "¿Preguntas, errores o ayuda con la configuración?"
+
+msgid "Get Support"
+msgstr "Obtener soporte"
+
+msgid "Automatic Injection"
+msgstr "Inyección automática"
+
+msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
+msgstr "Cuando se selecciona un modo de colocación diferente de Solo manual, el plugin inyecta automáticamente la etiqueta de última actualización en el contenido singular de publicación/página a través del filtro the_content."
+
+msgid "Mode"
+msgstr "Modo"
+
+msgid "Expected output position"
+msgstr "Posición de salida esperada"
+
+msgid "Label appears below the post body."
+msgstr "La etiqueta aparece debajo del cuerpo de la publicación."
+
+msgid "Label appears above the post body."
+msgstr "La etiqueta aparece encima del cuerpo de la publicación."
+
+msgid "Before and after"
+msgstr "Antes y después"
+
+msgid "Label appears both above and below the post body."
+msgstr "La etiqueta aparece tanto encima como debajo del cuerpo de la publicación."
+
+msgid "Manual only"
+msgstr "Solo manual"
+
+msgid "Nothing is injected automatically. Use the template tag below in your theme file."
+msgstr "No se inyecta nada automáticamente. Usa la etiqueta de plantilla a continuación en el archivo de tu tema."
+
+msgid "Label Template"
+msgstr "Plantilla de etiqueta"
+
+msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
+msgstr "La configuración de Plantilla de etiqueta controla el texto que se muestra. Usa %s como marcador de posición de fecha."
+
+msgid "Template setting"
+msgstr "Configuración de plantilla"
+
+msgid "Example frontend output"
+msgstr "Ejemplo de salida en el frontend"
+
+msgid "Updated March 28, 2026"
+msgstr "Actualizado el 28 de marzo de 2026"
+
+msgid "Last checked: March 28, 2026"
+msgstr "Última verificación: 28 de marzo de 2026"
+
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "Contenido actualizado (sin fecha añadida — mostrado tal cual)"
+
+msgid "Template Tags"
+msgstr "Etiquetas de plantilla"
+
+msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
+msgstr "Usa estas funciones PHP en cualquier lugar de tu tema cuando la colocación esté establecida en Solo manual."
+
+msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr "Eco del HTML renderizado directamente. Usa dentro del Loop o pasa un ID de publicación."
+
+msgid "Expected HTML output:"
+msgstr "Salida HTML esperada:"
+
+msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
+msgstr "Devuelve la cadena HTML renderizada en lugar de eco. Útil para mayor manipulación."
+
+msgid "Date Format Reference"
+msgstr "Referencia de formato de fecha"
+
+msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
+msgstr "Al usar un formato de fecha personalizado, se aplican los mismos tokens de fecha PHP que usa WordPress. %s"
+
+msgid "View full format reference &rarr;"
+msgstr "Ver referencia completa de formato &rarr;"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Example output"
+msgstr "Ejemplo de salida"
+
+msgid "March 28, 2026"
+msgstr "28 de marzo de 2026"
+
+msgid "28/03/2026"
+msgstr "28/03/2026"
+
+msgid "28 Mar 2026"
+msgstr "28 mar 2026"
+
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+msgid "Format reference"
+msgstr "Referencia de formato"
+
+msgid "Frequently Asked Questions"
+msgstr "Preguntas Frecuentes"
+
+msgid "The label is not appearing on my posts."
+msgstr "La etiqueta no aparece en mis publicaciones."
+
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "Verifica que Activar salida esté marcado en la pestaña Configuración."
+
+msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
+msgstr "Verifica que el tipo de contenido (ej.: Entrada, Página) esté seleccionado en la lista de Tipos de contenido."
+
+msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
+msgstr "Si %s está marcado, la etiqueta solo se mostrará cuando el artículo haya sido editado después de su fecha de publicación original."
+
+msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
+msgstr "Si la Colocación automática está establecida en Solo manual, no se inyecta nada automáticamente — añade la etiqueta de plantilla a tu tema."
+
+msgid "How do I place the label exactly where I want it?"
+msgstr "¿Cómo coloco la etiqueta exactamente donde quiero?"
+
+msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
+msgstr "Establece la Colocación automática en %1$s en la pestaña Configuración, y añade %2$s en la plantilla de tu tema donde quieras que aparezca la etiqueta."
+
+msgid "Can I show just a static label with no date?"
+msgstr "¿Puedo mostrar solo una etiqueta estática sin fecha?"
+
+msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
+msgstr "Sí. Elimina %s de la Plantilla de etiqueta. El texto se mostrará tal cual sin fecha añadida."
+
+msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
+msgstr "Si necesitas ayuda con la configuración, has encontrado un error o quieres solicitar una función, ponte en contacto."
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Usage &amp; Support"
+msgstr "Uso y Soporte"
+
+msgid "Anomalous Developers"
+msgstr "Anomalous Developers"
+
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"

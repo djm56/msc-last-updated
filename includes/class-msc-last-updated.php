@@ -98,7 +98,7 @@ class Plugin {
 			'post_type_mode' => 'include',
 			'position'       => 'after',
 			// translators: %s is the formatted post last-updated date.
-			'label_text'     => __( 'Updated %s', 'msc-last-updated' ),
+			'label_text'     => __( 'Updated %s', 'micro-site-care-post-last-updated-date' ),
 			'date_mode'      => 'site',
 			'custom_format'  => 'F j, Y',
 			'modified_only'  => 1,

@@ -5,7 +5,7 @@
  * Description: Display and control the post last-updated date in flexible positions.
  * Version: 1.3.0
  * Author: Anomalous Developers
- * Text Domain: msc-last-updated
+ * Text Domain: micro-site-care-post-last-updated-date
  * Domain Path: /languages
  * Requires at least: 5.9
  * Tested up to: 6.9

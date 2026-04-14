@@ -1,5 +1,5 @@
 === Micro Site Care: Post Last Updated Date ===
-Contributors: anomalous
+Contributors: djm56
 Tags: last updated, last modified, post date, content date, editorial
 Requires at least: 5.9
 Tested up to: 6.9

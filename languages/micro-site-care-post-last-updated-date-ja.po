@@ -1,0 +1,286 @@
+# Japanese translation for Micro Site Care: Post Last Updated Date.
+# Copyright (C) 2026 Anomalous Developers
+# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
+# Anomalous Developers <support@anomalous.co.za>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
+"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
+"Language-Team: Japanese <support@anomalous.co.za>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: micro-site-care-post-last-updated-date\n"
+
+msgid "Updated %s"
+msgstr "更新日: %s"
+
+msgid "MSC Post Last Updated Date"
+msgstr "MSC 最終更新日"
+
+msgid "Micro Site Care: Post Last Updated Date"
+msgstr "Micro Site Care: 投稿最終更新日"
+
+msgid "Display and control the post last-updated date in flexible positions."
+msgstr "投稿の最終更新日を柔軟な位置にisplay和管理します。"
+
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+msgid "You do not have permission to access this page."
+msgstr "このページにアクセスする権限がありません。"
+
+msgid "Security check failed. Please try again."
+msgstr "セキュリティチェックに失敗しました。もう一度お試しください。"
+
+msgid "Enable output"
+msgstr "出力を有効化"
+
+msgid "Show Last Updated date on enabled post types."
+msgstr "有効な投稿タイプに最終更新日を表示します。"
+
+msgid "Automatic placement"
+msgstr "自動配置"
+
+msgid "After content"
+msgstr "コンテンツの後に"
+
+msgid "Before content"
+msgstr "コンテンツの前に"
+
+msgid "Before and after content"
+msgstr "コンテンツの前後に"
+
+msgid "Manual only (template tag)"
+msgstr "手動のみ（テンプレートタグ）"
+
+msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
+msgstr "手動のみを使用して、テーマ内でテンプレートタグ経由で出力を配置します。例については「使用とサポート」タブをご覧ください。"
+
+msgid "Label template"
+msgstr "ラベルテンプレート"
+
+msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
+msgstr "日付を表示する場所に%1$sを使用してください（例：%2$s）。日付なしのラベルを表示する場合は%1$sを省略してください。"
+
+msgid "Date format source"
+msgstr "日付フォーマットのソース"
+
+msgid "Use WordPress site date format"
+msgstr "WordPressサイトの日付フォーマットを使用"
+
+msgid "Use custom date format"
+msgstr "カスタム日付フォーマットを使用"
+
+msgid "Custom date format"
+msgstr "カスタム日付フォーマット"
+
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr "日付フォーマットのソースがカスタムに設定されている場合のみ使用。デフォルト: F j, Y"
+
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "カスタム形式はWordPressで使用されるPHP日付フォーマットトークンを使用します。%s"
+
+msgid "Visibility condition"
+msgstr "表示条件"
+
+msgid "Only show when modified date differs from publish date"
+msgstr "更新日を公開日と異なる場合のみ表示"
+
+msgid "Only show when modified date differs from publish date."
+msgstr "更新日を公開日と異なる場合のみ表示します。"
+
+msgid "Post type mode"
+msgstr "投稿タイプモード"
+
+msgid "Show only on selected post types"
+msgstr "選択した投稿タイプのみ表示"
+
+msgid "Show on all public post types except selected"
+msgstr "選択したものを除くすべての公開投稿タイプに表示"
+
+msgid "Post types"
+msgstr "投稿タイプ"
+
+msgid "Save Settings"
+msgstr "設定を保存"
+
+msgid "Upgrade to Pro"
+msgstr "Proにアップグレード"
+
+msgid "Unlock powerful extras:"
+msgstr "強力な機能をロック解除："
+
+msgid "Relative dates (e.g. \"3 days ago\")"
+msgstr "相対日付（例：「3日前」）"
+
+msgid "Hybrid mode — relative then absolute"
+msgstr "ハイブリッドモード — 相対的然后絶対的"
+
+msgid "Style presets (muted, pill, badge)"
+msgstr "スタイルプリセット（ミュート、ピル、バッジ）"
+
+msgid "Per-post override (show/hide/global)"
+msgstr "投稿ごとのoverride（表示/非表示/グローバル）"
+
+msgid "Shortcode with per-instance overrides"
+msgstr "インスタンスごとのoverrideを持つショートコード"
+
+msgid "View Pro Features"
+msgstr "Pro機能を見る"
+
+msgid "Support"
+msgstr "サポート"
+
+msgid "Questions, bugs, or setup help?"
+msgstr "質問、バグ、設定のヘルプ？"
+
+msgid "Get Support"
+msgstr "サポートを受ける"
+
+msgid "Automatic Injection"
+msgstr "自動挿入"
+
+msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
+msgstr "手動以外配置モードが選択されると、プラグインはthe_contentフィルター経由でsingular投稿/ページコンテンツに最終更新ラベルを自動挿入します。"
+
+msgid "Mode"
+msgstr "モード"
+
+msgid "Expected output position"
+msgstr " 예상される出力位置"
+
+msgid "Label appears below the post body."
+msgstr "ラベルは投稿本文の下に表示されます。"
+
+msgid "Label appears above the post body."
+msgstr "ラベルは投稿本文の上に表示されます。"
+
+msgid "Before and after"
+msgstr "前後"
+
+msgid "Label appears both above and below the post body."
+msgstr "ラベルは投稿本文の上下両方に表示されます。"
+
+msgid "Manual only"
+msgstr "手動のみ"
+
+msgid "Nothing is injected automatically. Use the template tag below in your theme file."
+msgstr "何も自動挿入されません。テーマファイルの下のテンプレートタグを使用してください。"
+
+msgid "Label Template"
+msgstr "ラベルテンプレート"
+
+msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
+msgstr "ラベルテンプレート設定はdisplayされるテキストを制御します。日付のプレースホルダーとして%sを使用してください。"
+
+msgid "Template setting"
+msgstr "テンプレート設定"
+
+msgid "Example frontend output"
+msgstr "フロントエンド出力の例"
+
+msgid "Updated March 28, 2026"
+msgstr "2026年3月28日に更新"
+
+msgid "Last checked: March 28, 2026"
+msgstr "最終確認: 2026年3月28日"
+
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "新鮮なコンテンツ（日付なし — そのまま表示）"
+
+msgid "Template Tags"
+msgstr "テンプレートタグ"
+
+msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
+msgstr "配置が手動に設定されている場合、テーマ内のどこにでもこれらのPHP関数を使用できます。"
+
+msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr "レンダリングされたHTMLを直接エコーします。Loop内または投稿IDを渡して使用してください。"
+
+msgid "Expected HTML output:"
+msgstr "预期されるHTML出力："
+
+msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
+msgstr "エコーする代わりにレンダリングされたHTML文字列を返します。さらなる操作に便利です。"
+
+msgid "Date Format Reference"
+msgstr "日付フォーマットリファレンス"
+
+msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
+msgstr "カスタム日付フォーマットを使用する場合、WordPressで使用される同じPHP日付トークンが適用されます。%s"
+
+msgid "View full format reference &rarr;"
+msgstr "完全なフォーマットリファレンスを見る &rarr;"
+
+msgid "Token"
+msgstr "トークン"
+
+msgid "Example output"
+msgstr "出力例"
+
+msgid "March 28, 2026"
+msgstr "2026年3月28日"
+
+msgid "28/03/2026"
+msgstr "2026/03/28"
+
+msgid "28 Mar 2026"
+msgstr "2026年3月28日"
+
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+msgid "Format reference"
+msgstr "フォーマットリファレンス"
+
+msgid "Frequently Asked Questions"
+msgstr "よくある質問"
+
+msgid "The label is not appearing on my posts."
+msgstr "ラベルが投稿に表示されません。"
+
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "設定タブで出力を有効화가チェックされていることを確認してください。"
+
+msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
+msgstr "投稿タイプリストで投稿タイプ（例：投稿、固定ページ）が選択されていることを確認してください。"
+
+msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
+msgstr "%sがチェックされている場合、ラベルは記事が元の公開日後に編集されたときのみ表示されます。"
+
+msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
+msgstr "自動配置が手に設定されている場合、何も自動挿入されません — テーマテンプレートタグを追加してください。"
+
+msgid "How do I place the label exactly where I want it?"
+msgstr "ラベルを好きな場所に配置するにはどうすればいいですか？"
+
+msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
+msgstr "設定タブで自動配置を%1$sに設定し、ラベルを表示したいテーマテンプレートの場所に%2$sを追加してください。"
+
+msgid "Can I show just a static label with no date?"
+msgstr "日付なしの静的なラベルのみを表示できますか？"
+
+msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
+msgstr "はい。ラベルテンプレートから%sを削除してください。テキストはそのまま出力され、日付は追加されません。"
+
+msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
+msgstr "設定のヘルプが必要であれば、バグを見つけた場合、または機能をリクエストしたい場合は、お問い合わせください。"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Usage &amp; Support"
+msgstr "使用とサポート"
+
+msgid "Anomalous Developers"
+msgstr "Anomalous Developers"
+
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"

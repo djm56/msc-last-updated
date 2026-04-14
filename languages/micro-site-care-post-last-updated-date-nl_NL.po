@@ -1,0 +1,286 @@
+# Dutch (Netherlands) translation for Micro Site Care: Post Last Updated Date.
+# Copyright (C) 2026 Anomalous Developers
+# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
+# Anomalous Developers <support@anomalous.co.za>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
+"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
+"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
+"Language-Team: Dutch (Netherlands) <support@anomalous.co.za>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: micro-site-care-post-last-updated-date\n"
+
+msgid "Updated %s"
+msgstr "Bijgewerkt %s"
+
+msgid "MSC Post Last Updated Date"
+msgstr "MSC Datum laatste update"
+
+msgid "Micro Site Care: Post Last Updated Date"
+msgstr "Micro Site Care: Datum laatste update van bericht"
+
+msgid "Display and control the post last-updated date in flexible positions."
+msgstr "Toon en beheer de datum van de laatste update van berichten op flexibele posities."
+
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+msgid "You do not have permission to access this page."
+msgstr "U heeft geen toestemming om deze pagina te bekijken."
+
+msgid "Security check failed. Please try again."
+msgstr "Beveiligingscontrole mislukt. Probeer het opnieuw."
+
+msgid "Enable output"
+msgstr "Output inschakelen"
+
+msgid "Show Last Updated date on enabled post types."
+msgstr "Datum laatste update tonen op ingeschakelde berichttypen."
+
+msgid "Automatic placement"
+msgstr "Automatische plaatsing"
+
+msgid "After content"
+msgstr "Na inhoud"
+
+msgid "Before content"
+msgstr "Voor inhoud"
+
+msgid "Before and after content"
+msgstr "Voor en na inhoud"
+
+msgid "Manual only (template tag)"
+msgstr "Alleen handmatig (template tag)"
+
+msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
+msgstr "Gebruik Alleen handmatig om output via de template tag in uw thema te plaatsen. Zie het Tabblad Gebruik en Ondersteuning voor voorbeelden."
+
+msgid "Label template"
+msgstr "Label sjabloon"
+
+msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
+msgstr "Gebruik %1$s waar de datum moet verschijnen, bijv. %2$s. Laat %1$s weg om het label zonder datum te tonen."
+
+msgid "Date format source"
+msgstr "Datumformaat bron"
+
+msgid "Use WordPress site date format"
+msgstr "Gebruik WordPress site datumformaat"
+
+msgid "Use custom date format"
+msgstr "Gebruik aangepast datumformaat"
+
+msgid "Custom date format"
+msgstr "Aangepast datumformaat"
+
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr "Alleen gebruikt wanneer Datumformaat bron is ingesteld op Aangepast. Standaard: F j, Y"
+
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "Aangepast formaat gebruikt de PHP datumformaat tokens van WordPress. %s"
+
+msgid "Visibility condition"
+msgstr "Zichtbaarheidsvoorwaarde"
+
+msgid "Only show when modified date differs from publish date"
+msgstr "Alleen tonen wanneer wijzigingsdatum verschilt van publicatiedatum"
+
+msgid "Only show when modified date differs from publish date."
+msgstr "Alleen tonen wanneer wijzigingsdatum verschilt van publicatiedatum."
+
+msgid "Post type mode"
+msgstr "Berichttype modus"
+
+msgid "Show only on selected post types"
+msgstr "Alleen tonen op geselecteerde berichttypen"
+
+msgid "Show on all public post types except selected"
+msgstr "Tonen op alle publieke berichttypen behalve geselecteerde"
+
+msgid "Post types"
+msgstr "Berichttypen"
+
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
+
+msgid "Upgrade to Pro"
+msgstr "Upgraden naar Pro"
+
+msgid "Unlock powerful extras:"
+msgstr "Ontgrendel krachtige extra's:"
+
+msgid "Relative dates (e.g. \"3 days ago\")"
+msgstr "Relatieve datums (bijv. \"3 dagen geleden\")"
+
+msgid "Hybrid mode — relative then absolute"
+msgstr "Hybride modus — relatief dan absoluut"
+
+msgid "Style presets (muted, pill, badge)"
+msgstr "Stijl presets (gedempt, pil, badge)"
+
+msgid "Per-post override (show/hide/global)"
+msgstr "Per-bericht override (tonen/verbergen/globaal)"
+
+msgid "Shortcode with per-instance overrides"
+msgstr "Shortcode met per-instance overrides"
+
+msgid "View Pro Features"
+msgstr "Bekijk Pro functies"
+
+msgid "Support"
+msgstr "Ondersteuning"
+
+msgid "Questions, bugs, or setup help?"
+msgstr "Vragen, bugs of hulp bij setup?"
+
+msgid "Get Support"
+msgstr "Ondersteuning krijgen"
+
+msgid "Automatic Injection"
+msgstr "Automatische injectie"
+
+msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
+msgstr "Wanneer een andere plaatsingsmodus dan Alleen handmatig is geselecteerd, injecteert de plugin automatisch het label voor laatste update in singuliere bericht/pagina inhoud via de the_content filter."
+
+msgid "Mode"
+msgstr "Modus"
+
+msgid "Expected output position"
+msgstr "Verwachte output positie"
+
+msgid "Label appears below the post body."
+msgstr "Label verschijnt onder de berichttekst."
+
+msgid "Label appears above the post body."
+msgstr "Label verschijnt boven de berichttekst."
+
+msgid "Before and after"
+msgstr "Voor en na"
+
+msgid "Label appears both above and below the post body."
+msgstr "Label verschijnt zowel boven als onder de berichttekst."
+
+msgid "Manual only"
+msgstr "Alleen handmatig"
+
+msgid "Nothing is injected automatically. Use the template tag below in your theme file."
+msgstr "Er wordt niets automatisch geïnjecteerd. Gebruik de template tag hieronder in uw themabestand."
+
+msgid "Label Template"
+msgstr "Label Sjabloon"
+
+msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
+msgstr "De Label sjabloon instelling bepaalt de weergegeven tekst. Gebruik %s als datum placeholder."
+
+msgid "Template setting"
+msgstr "Template instelling"
+
+msgid "Example frontend output"
+msgstr "Voorbeeld frontend output"
+
+msgid "Updated March 28, 2026"
+msgstr "Bijgewerkt op 28 maart 2026"
+
+msgid "Last checked: March 28, 2026"
+msgstr "Laatst gecontroleerd: 28 maart 2026"
+
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "Verse inhoud (geen datum toegevoegd — weergegeven zoals het is)"
+
+msgid "Template Tags"
+msgstr "Template Tags"
+
+msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
+msgstr "Gebruik deze PHP functies overal in uw thema wanneer plaatsing is ingesteld op Handmatig."
+
+msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr "Toont de weergegeven HTML direct. Gebruik binnen The Loop of geef een bericht-ID door."
+
+msgid "Expected HTML output:"
+msgstr "Verwachte HTML output:"
+
+msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
+msgstr "Retourneert de weergegeven HTML string in plaats van het te tonen. Handig voor verdere manipulatie."
+
+msgid "Date Format Reference"
+msgstr "Datumformaat referentie"
+
+msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
+msgstr "Bij het gebruik van een aangepast datumformaat gelden dezelfde PHP datum tokens die door WordPress worden gebruikt. %s"
+
+msgid "View full format reference &rarr;"
+msgstr "Bekijk volledige formaat referentie &rarr;"
+
+msgid "Token"
+msgstr "Token"
+
+msgid "Example output"
+msgstr "Voorbeeld output"
+
+msgid "March 28, 2026"
+msgstr "28 maart 2026"
+
+msgid "28/03/2026"
+msgstr "28/03/2026"
+
+msgid "28 Mar 2026"
+msgstr "28 mrt 2026"
+
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+msgid "Format reference"
+msgstr "Formaat referentie"
+
+msgid "Frequently Asked Questions"
+msgstr "Veelgestelde vragen"
+
+msgid "The label is not appearing on my posts."
+msgstr "Het label verschijnt niet op mijn berichten."
+
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "Controleer of Output inschakelen is aangevinkt op het Tabblad Instellingen."
+
+msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
+msgstr "Controleer of het berichttype (bijv. Bericht, Pagina) is geselecteerd in de lijst Berichttypen."
+
+msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
+msgstr "Als %s is aangevinkt, wordt het label alleen getoond wanneer het artikel is bewerkt na zijn oorspronkelijke publicatiedatum."
+
+msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
+msgstr "Als Automatische plaatsing is ingesteld op Handmatig, wordt er niets automatisch geïnjecteerd — voeg de template tag toe aan uw thema."
+
+msgid "How do I place the label exactly where I want it?"
+msgstr "Hoe plaats ik het label precies waar ik het wil hebben?"
+
+msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
+msgstr "Stel Automatische plaatsing in op %1$s op het Tabblad Instellingen en voeg vervolgens %2$s toe in uw thema sjabloon waar u wilt dat het label verschijnt."
+
+msgid "Can I show just a static label with no date?"
+msgstr "Kan ik alleen een statisch label zonder datum tonen?"
+
+msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
+msgstr "Ja. Verwijder %s uit het Label sjabloon. De tekst wordt zoals het is weergegeven zonder datum toe te voegen."
+
+msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
+msgstr "Als u hulp nodig heeft bij de installatie, een bug heeft gevonden of een functie wilt aanvragen, neem dan contact op."
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Usage &amp; Support"
+msgstr "Gebruik en Ondersteuning"
+
+msgid "Anomalous Developers"
+msgstr "Anomalous Developers"
+
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"

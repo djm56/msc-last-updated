@@ -139,7 +139,7 @@ class Module {
 
 		$formatted_date = wp_date( $date_format, $modified );
 		// translators: %s is the formatted post last-updated date.
-		$label_template = (string) $this->plugin->get_option( 'label_text', __( 'Updated %s', 'msc-last-updated' ) );
+		$label_template = (string) $this->plugin->get_option( 'label_text', __( 'Updated %s', 'micro-site-care-post-last-updated-date' ) );
 		// If the template contains %s, replace it with the formatted date. Otherwise render the label as-is.
 		$label = false !== strpos( $label_template, '%s' )
 			? sprintf( $label_template, $formatted_date )
