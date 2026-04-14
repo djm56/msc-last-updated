@@ -2,10 +2,10 @@
 /**
  * Admin settings class for MSC Last Updated.
  *
- * @package MSCLU
+ * @package MSCLUD
  */
 
-namespace MSCLU;
+namespace MSCLUD;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -33,7 +33,7 @@ class Settings {
 
 		add_action( 'admin_menu', array( $this, 'register_menu' ) );
 		add_action( 'admin_init', array( $this, 'maybe_redirect_to_pro_settings' ) );
-		add_action( 'admin_post_msc-last-updated_save_settings', array( $this, 'handle_save' ) );
+		add_action( 'admin_post_micro-site-care-post-last-updated-date_save_settings', array( $this, 'handle_save' ) );
 	}
 
 	/**
@@ -89,7 +89,7 @@ class Settings {
 
 		// Verify nonce with better error handling.
 		$nonce = isset( $_POST['_wpnonce'] ) ? sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ) : '';
-		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'msc-last-updated_save_settings' ) ) {
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, 'micro-site-care-post-last-updated-date_save_settings' ) ) {
 			wp_die( esc_html__( 'Security check failed. Please try again.', 'micro-site-care-post-last-updated-date' ) );
 		}
 
@@ -238,8 +238,8 @@ class Settings {
 
 					<div class="msclu-settings-main" style="flex:1;min-width:0;order:1;">
 						<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
-							<input type="hidden" name="action" value="msc-last-updated_save_settings" />
-							<?php wp_nonce_field( 'msc-last-updated_save_settings' ); ?>
+							<input type="hidden" name="action" value="micro-site-care-post-last-updated-date_save_settings" />
+							<?php wp_nonce_field( 'micro-site-care-post-last-updated-date_save_settings' ); ?>
 
 							<table class="form-table" role="presentation">
 								<tbody>

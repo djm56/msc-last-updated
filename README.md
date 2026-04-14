@@ -2,7 +2,7 @@
 
 Display and control the post last-updated date in flexible positions.
 
-**Version:** 1.2.0 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
+**Version:** 1.3.0 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
 
 ---
 
@@ -34,22 +34,22 @@ Display and control the post last-updated date in flexible positions.
 ### Via WordPress admin
 
 1. Go to **Plugins → Add New Plugin**.
-2. Search for `MSC Last Updated`.
+2. Search for `Micro Site Care Post Last Updated`.
 3. Click **Install Now**, then **Activate**.
-4. Go to **Settings → MSC Last Updated** to configure.
+4. Go to **Settings → MSC Post Last Updated Date** to configure.
 
 ### Manual upload
 
 1. Download the latest release zip from [the releases page](https://anomalous.co.za).
-2. Upload the `msc-last-updated` folder to `/wp-content/plugins/`.
+2. Upload the `micro-site-care-post-last-updated-date` folder to `/wp-content/plugins/`.
 3. Activate through **Plugins → Installed Plugins**.
-4. Go to **Settings → MSC Last Updated** to configure.
+4. Go to **Settings → MSC Post Last Updated Date** to configure.
 
 ---
 
 ## Configuration
 
-Navigate to **Settings → MSC Last Updated**.
+Navigate to **Settings → MSC Post Last Updated Date**.
 
 | Setting | Description | Default |
 |---|---|---|
@@ -131,24 +131,24 @@ add_filter( 'msclu_wrapper_classes', function( $classes, $post ) {
 
 The plugin is fully translation-ready.
 
-- **Text domain:** `msc-last-updated`
+- **Text domain:** `micro-site-care-post-last-updated-date`
 - **Domain path:** `/languages`
-- **POT template:** `languages/msc-last-updated.pot`
+- **POT template:** `languages/micro-site-care-post-last-updated-date.pot`
 
 Included translations:
 
 | Locale | Language | File |
 |---|---|---|
-| `pt_BR` | Brazilian Portuguese | `msc-last-updated-pt_BR.po` / `.mo` |
-| `pt_PT` | European Portuguese | `msc-last-updated-pt_PT.po` / `.mo` |
+| `pt_BR` | Brazilian Portuguese | `micro-site-care-post-last-updated-date-pt_BR.po` / `.mo` |
+| `pt_PT` | European Portuguese | `micro-site-care-post-last-updated-date-pt_PT.po` / `.mo` |
 
 ### Regenerate the POT file
 
 Requires [WP-CLI](https://wp-cli.org/). Run from inside the plugin folder:
 
 ```bash
-wp i18n make-pot . languages/msc-last-updated.pot \
-  --domain=msc-last-updated \
+wp i18n make-pot . languages/micro-site-care-post-last-updated-date.pot \
+  --domain=micro-site-care-post-last-updated-date \
   --exclude=node_modules,vendor,.git,tests
 ```
 
@@ -161,7 +161,7 @@ composer i18n:pot
 ### Compile a .po file to .mo
 
 ```bash
-wp i18n make-mo languages/msc-last-updated-pt_BR.po languages/msc-last-updated-pt_BR.mo
+wp i18n make-mo languages/micro-site-care-post-last-updated-date-pt_BR.po languages/micro-site-care-post-last-updated-date-pt_BR.mo
 ```
 
 Or compile all `.po` files in the languages directory at once:
@@ -172,7 +172,7 @@ wp i18n make-mo languages/
 
 ### Contributing a new translation
 
-1. Copy `languages/msc-last-updated.pot` to `languages/msc-last-updated-{locale}.po`.
+1. Copy `languages/micro-site-care-post-last-updated-date.pot` to `languages/micro-site-care-post-last-updated-date-{locale}.po`.
 2. Edit the `.po` file with [Poedit](https://poedit.net/) or any `.po` editor.
 3. Compile to `.mo` using the command above.
 4. Submit both files via a pull request.

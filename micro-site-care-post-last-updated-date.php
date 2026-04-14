@@ -21,41 +21,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Current plugin version.
  */
-define( 'MSCLU_PLUGIN_VERSION', '1.3.0' );
+define( 'MSCLUD_PLUGIN_VERSION', '1.3.0' );
 
 /**
  * Absolute path to the main plugin file.
  */
-define( 'MSCLU_PLUGIN_FILE', __FILE__ );
+define( 'MSCLUD_PLUGIN_FILE', __FILE__ );
 
 /**
  * Absolute path to the plugin directory.
  */
-define( 'MSCLU_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'MSCLUD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 /**
  * URL to the plugin directory.
  */
-define( 'MSCLU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'MSCLUD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-module.php';
-require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated-settings.php';
-require_once MSCLU_PLUGIN_DIR . 'includes/class-msc-last-updated.php';
+require_once MSCLUD_PLUGIN_DIR . 'includes/class-micro-site-care-post-last-updated-date-module.php';
+require_once MSCLUD_PLUGIN_DIR . 'includes/class-micro-site-care-post-last-updated-date-settings.php';
+require_once MSCLUD_PLUGIN_DIR . 'includes/class-micro-site-care-post-last-updated-date.php';
 
 register_activation_hook(
 	__FILE__,
-	array( 'MSCLU\\Plugin', 'activate' )
+	array( 'MSCLUD\\Plugin', 'activate' )
 );
 
 register_deactivation_hook(
 	__FILE__,
-	array( 'MSCLU\\Plugin', 'deactivate' )
+	array( 'MSCLUD\\Plugin', 'deactivate' )
 );
 
 add_action(
 	'plugins_loaded',
 	static function () {
-		MSCLU\Plugin::instance();
+		MSCLUD\Plugin::instance();
 	}
 );
 
@@ -68,11 +68,11 @@ if ( ! function_exists( 'msclup_get_last_updated' ) ) {
 	 * @return string
 	 */
 	function msclup_get_last_updated( $post_id = 0, $context = array() ) {
-		if ( ! class_exists( 'MSCLU\\Plugin' ) ) {
+		if ( ! class_exists( 'MSCLUD\\Plugin' ) ) {
 			return '';
 		}
 
-		return MSCLU\Plugin::instance()->get_last_updated_markup( (int) $post_id, (array) $context );
+		return MSCLUD\Plugin::instance()->get_last_updated_markup( (int) $post_id, (array) $context );
 	}
 }
 

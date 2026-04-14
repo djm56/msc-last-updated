@@ -59,7 +59,7 @@ class MSCLU_Settings_Test extends WP_UnitTestCase {
 		// Set up $_POST data without valid nonce.
 		$_POST = array(
 			'_wpnonce' => 'invalid_nonce',
-			'action'   => 'msc-last-updated_save_settings',
+			'action'   => 'micro-site-care-post-last-updated-date_save_settings',
 		);
 
 		// Expect wp_die to be called due to nonce failure.
@@ -85,8 +85,8 @@ class MSCLU_Settings_Test extends WP_UnitTestCase {
 
 		// Set up $_POST data.
 		$_POST = array(
-			'_wpnonce' => wp_create_nonce( 'msc-last-updated_save_settings' ),
-			'action'   => 'msc-last-updated_save_settings',
+			'_wpnonce' => wp_create_nonce( 'micro-site-care-post-last-updated-date_save_settings' ),
+			'action'   => 'micro-site-care-post-last-updated-date_save_settings',
 		);
 
 		// Expect wp_die due to capability check failure.
@@ -124,8 +124,8 @@ class MSCLU_Settings_Test extends WP_UnitTestCase {
 
 		// Set up sanitized $_POST data.
 		$_POST = array(
-			'_wpnonce'      => wp_create_nonce( 'msc-last-updated_save_settings' ),
-			'action'        => 'msc-last-updated_save_settings',
+			'_wpnonce'      => wp_create_nonce( 'micro-site-care-post-last-updated-date_save_settings' ),
+			'action'        => 'micro-site-care-post-last-updated-date_save_settings',
 			'module_enabled' => '1',
 			'post_types'    => array( 'post', 'page' ),
 			'post_type_mode' => 'include',

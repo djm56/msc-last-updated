@@ -241,6 +241,6 @@ class MSCLU_Module_Test extends WP_UnitTestCase {
 		$module->enqueue_assets();
 
 		// No styles should be enqueued.
-		$this->assertFalse( wp_style_is( 'msc-last-updated-styles', 'enqueued' ) );
+		$this->assertFalse( wp_style_is( 'micro-site-care-post-last-updated-date-styles', 'enqueued' ) );
 	}
 }

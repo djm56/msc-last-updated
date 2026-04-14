@@ -28,7 +28,7 @@ Micro Site Care: Post Last Updated Date adds a last-updated date label to your p
 
 == Installation ==
 
-1. Upload the `msc-last-updated` folder to the `/wp-content/plugins/` directory, or install directly from the WordPress plugin screen.
+1. Upload the `micro-site-care-post-last-updated-date` folder to the `/wp-content/plugins/` directory, or install directly from the WordPress plugin screen.
 2. Activate the plugin through the **Plugins** screen in WordPress.
 3. Go to **Settings → MSC Post Last Updated Date** to configure the plugin.
 

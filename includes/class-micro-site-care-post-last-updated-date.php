@@ -1,9 +1,9 @@
 <?php
 /**
- * Main bootstrap class for MSC Last Updated.
+ * Main bootstrap class for Micro Site Care: Post Last Updated Date.
  */
 
-namespace MSCLU;
+namespace MSCLUD;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -160,5 +160,16 @@ class Plugin {
 		);
 
 		return ! empty( $map[ $feature ] );
+	}
+
+	/**
+	 * Returns rendered Last Updated markup for a post.
+	 *
+	 * @param int                $post_id Post ID.
+	 * @param array<string,mixed> $context Render context.
+	 * @return string
+	 */
+	public function get_last_updated_markup( $post_id = 0, $context = array() ) {
+		return $this->module->get_last_updated_html( $post_id, $context );
 	}
 }

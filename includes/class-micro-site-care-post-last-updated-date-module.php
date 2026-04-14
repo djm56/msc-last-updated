@@ -3,7 +3,7 @@
  * Module class for MSC Last Updated.
  */
 
-namespace MSCLU;
+namespace MSCLUD;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -38,12 +38,12 @@ class Module {
 			return;
 		}
 
-		if ( file_exists( MSCLU_PLUGIN_DIR . 'assets/css/last-updated.css' ) ) {
+		if ( file_exists( MSCLUD_PLUGIN_DIR . 'assets/css/last-updated.css' ) ) {
 			wp_enqueue_style(
-				'msc-last-updated-styles',
-				MSCLU_PLUGIN_URL . 'assets/css/last-updated.css',
+				'micro-site-care-post-last-updated-date-styles',
+				MSCLUD_PLUGIN_URL . 'assets/css/last-updated.css',
 				array(),
-				MSCLU_PLUGIN_VERSION
+				MSCLUD_PLUGIN_VERSION
 			);
 		}
 	}

@@ -314,7 +314,7 @@ if ( file_exists( $test_dir . '/includes/functions.php' ) ) {
 	}
 
 	if ( ! defined( 'MSCLU_PLUGIN_FILE' ) ) {
-		define( 'MSCLU_PLUGIN_FILE', dirname( __FILE__ ) . '/msc-last-updated.php' );
+		define( 'MSCLU_PLUGIN_FILE', dirname( __FILE__ ) . '/micro-site-care-post-last-updated-date.php' );
 	}
 
 	if ( ! defined( 'MSCLU_PLUGIN_DIR' ) ) {
@@ -322,7 +322,7 @@ if ( file_exists( $test_dir . '/includes/functions.php' ) ) {
 	}
 
 	if ( ! defined( 'MSCLU_PLUGIN_URL' ) ) {
-		define( 'MSCLU_PLUGIN_URL', 'https://example.com/wp-content/plugins/msc-last-updated/' );
+		define( 'MSCLU_PLUGIN_URL', 'https://example.com/wp-content/plugins/micro-site-care-post-last-updated-date/' );
 	}
 }
 
