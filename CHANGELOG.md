@@ -3,6 +3,15 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] - 2026-04-22
+
+### Added
+- Complete translations for 10 additional locales: German (Switzerland), German (Germany), Spanish (Spain), Spanish (Mexico), French (Canada), French (France), Italian (Italy), Japanese, Dutch (Belgium), and Dutch (Netherlands).
+- Regenerated `.pot` source template with correct source file references.
+- Populated `readmetranslations.json` with readme.txt translations for all 12 locales.
+
+---
+
 ## [1.3.0] - 2026-03-28
 
 ### Added

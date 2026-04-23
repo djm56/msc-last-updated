@@ -4,7 +4,7 @@ Tags: last updated, last modified, post date, content date, editorial
 Requires at least: 5.9
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ Yes. MSC Post Last Updated Date Pro adds relative dates ("3 days ago"), a hybrid
 
 == Changelog ==
 
+= 1.4.0 =
+* Adds complete translations for 10 additional locales (de_CH, de_DE, es_ES, es_MX, fr_CA, fr_FR, it_IT, ja, nl_BE, nl_NL). Regenerates .pot source template with correct file references. Populates readme.txt translations for all 12 locales.
+
 = 1.3.0 =
 * Adds Brazilian and European Portuguese translations. No functional changes.
 
@@ -107,6 +110,9 @@ Yes. MSC Post Last Updated Date Pro adds relative dates ("3 days ago"), a hybrid
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.4.0 =
+* Adds complete translations for 10 additional locales. No functional changes.
 
 = 1.3.0 =
 Adds Brazilian and European Portuguese translations. No functional changes.

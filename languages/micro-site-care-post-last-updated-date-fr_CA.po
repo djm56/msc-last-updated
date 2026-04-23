@@ -5,9 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.3.0\n"
-"Report-Msgid-Bugs-To: https://anomalous.co.za\n"
-"POT-Creation-Date: 2026-03-28 00:00+0000\n"
+"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-"
+"post-last-updated-date\n"
+"POT-Creation-Date: 2026-04-22T15:58:01+00:00\n"
 "PO-Revision-Date: 2026-03-28 00:00+0000\n"
 "Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
 "Language-Team: French (Canada) <support@anomalous.co.za>\n"
@@ -18,269 +19,454 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Domain: micro-site-care-post-last-updated-date\n"
 
-msgid "Updated %s"
-msgstr "Mis à jour %s"
-
-msgid "MSC Post Last Updated Date"
-msgstr "MSC Date de dernière mise à jour"
-
+#. Plugin Name of the plugin
+#: micro-site-care-post-last-updated-date.php
 msgid "Micro Site Care: Post Last Updated Date"
 msgstr "Micro Site Care : Date de dernière mise à jour de l'article"
 
+#. Plugin URI of the plugin
+#: micro-site-care-post-last-updated-date.php
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"
+
+#. Description of the plugin
+#: micro-site-care-post-last-updated-date.php
 msgid "Display and control the post last-updated date in flexible positions."
-msgstr "Affichez et contrôlez la date de dernière mise à jour des articles à des positions flexibles."
-
-msgid "Settings saved."
-msgstr "Paramètres enregistrés."
-
-msgid "You do not have permission to access this page."
-msgstr "Vous n'avez pas la permission d'accéder à cette page."
-
-msgid "Security check failed. Please try again."
-msgstr "La vérification de sécurité a échoué. Veuillez réessayer."
-
-msgid "Enable output"
-msgstr "Activer la sortie"
-
-msgid "Show Last Updated date on enabled post types."
-msgstr "Afficher la date de dernière mise à jour sur les types de contenu activés."
-
-msgid "Automatic placement"
-msgstr "Placement automatique"
-
-msgid "After content"
-msgstr "Après le contenu"
-
-msgid "Before content"
-msgstr "Avant le contenu"
-
-msgid "Before and after content"
-msgstr "Avant et après le contenu"
-
-msgid "Manual only (template tag)"
-msgstr "Manuel uniquement (balise de modèle)"
-
-msgid "Use Manual to place output via the template tag in your theme. See the Usage tab for examples."
-msgstr "Utilisez Manuel uniquement pour placer la sortie via la balise de modèle dans votre thème. Consultez l'onglet Utilisation et Support pour des exemples."
-
-msgid "Label template"
-msgstr "Modèle d'étiquette"
-
-msgid "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date."
-msgstr "Utilisez %1$s là où la date doit apparaître, ex. %2$s. Omettez %1$s pour afficher l'étiquette sans date."
-
-msgid "Date format source"
-msgstr "Source du format de date"
-
-msgid "Use WordPress site date format"
-msgstr "Utiliser le format de date du site WordPress"
-
-msgid "Use custom date format"
-msgstr "Utiliser un format de date personnalisé"
-
-msgid "Custom date format"
-msgstr "Format de date personnalisé"
-
-msgid "Only used when Date format source is set to Custom. Default: F j, Y"
-msgstr "Utilisé uniquement lorsque la Source du format de date est définie sur Personnalisé. Par défaut : F j, Y"
-
-msgid "Custom format uses PHP date format tokens. %s"
-msgstr "Le format personnalisé utilise les jetons de date PHP de WordPress. %s"
-
-msgid "Visibility condition"
-msgstr "Condition de visibilité"
-
-msgid "Only show when modified date differs from publish date"
-msgstr "Afficher uniquement lorsque la date de modification diffère de la date de publication"
-
-msgid "Only show when modified date differs from publish date."
-msgstr "Afficher uniquement lorsque la date de modification diffère de la date de publication."
-
-msgid "Post type mode"
-msgstr "Mode de type de contenu"
-
-msgid "Show only on selected post types"
-msgstr "Afficher uniquement sur les types de contenu sélectionnés"
-
-msgid "Show on all public post types except selected"
-msgstr "Afficher sur tous les types de contenu publics sauf les sélectionnés"
-
-msgid "Post types"
-msgstr "Types de contenu"
-
-msgid "Save Settings"
-msgstr "Enregistrer les paramètres"
-
-msgid "Upgrade to Pro"
-msgstr "Passer à Pro"
-
-msgid "Unlock powerful extras:"
-msgstr "Débloquez des fonctionnalités puissantes :"
-
-msgid "Relative dates (e.g. \"3 days ago\")"
-msgstr "Dates relatives (ex. : \"il y a 3 jours\")"
-
-msgid "Hybrid mode — relative then absolute"
-msgstr "Mode hybride — relatif puis absolu"
-
-msgid "Style presets (muted, pill, badge)"
-msgstr "Préréglages de style (discret, pilule, badge)"
-
-msgid "Per-post override (show/hide/global)"
-msgstr "Override par article (afficher/masquer/global)"
-
-msgid "Shortcode with per-instance overrides"
-msgstr "Shortcode avec overrides par instance"
-
-msgid "View Pro Features"
-msgstr "Voir les fonctionnalités Pro"
-
-msgid "Support"
-msgstr "Support"
-
-msgid "Questions, bugs, or setup help?"
-msgstr "Questions, bugs ou aide à la configuration ?"
-
-msgid "Get Support"
-msgstr "Obtenir du support"
-
-msgid "Automatic Injection"
-msgstr "Injection automatique"
-
-msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
-msgstr "Lorsqu'un mode de placement autre que Manuel uniquement est sélectionné, le plugin injecte automatiquement l'étiquette de dernière mise à jour dans le contenu singulier article/page via le filtre the_content."
-
-msgid "Mode"
-msgstr "Mode"
-
-msgid "Expected output position"
-msgstr "Position de sortie attendue"
-
-msgid "Label appears below the post body."
-msgstr "L'étiquette apparaît sous le corps de l'article."
-
-msgid "Label appears above the post body."
-msgstr "L'étiquette apparaît au-dessus du corps de l'article."
-
-msgid "Before and after"
-msgstr "Avant et après"
-
-msgid "Label appears both above and below the post body."
-msgstr "L'étiquette apparaît à la fois au-dessus et en dessous du corps de l'article."
-
-msgid "Manual only"
-msgstr "Manuel uniquement"
-
-msgid "Nothing is injected automatically. Use the template tag below in your theme file."
-msgstr "Rien n'est injecté automatiquement. Utilisez la balise de modèle ci-dessous dans votre fichier de thème."
-
-msgid "Label Template"
-msgstr "Modèle d'étiquette"
-
-msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
-msgstr "Le paramètre Modèle d'étiquette contrôle le texte affiché. Utilisez %s comme espace réservé pour la date."
-
-msgid "Template setting"
-msgstr "Paramètre de modèle"
-
-msgid "Example frontend output"
-msgstr "Exemple de sortie frontend"
-
-msgid "Updated March 28, 2026"
-msgstr "Mis à jour le 28 mars 2026"
-
-msgid "Last checked: March 28, 2026"
-msgstr "Dernière vérification : 28 mars 2026"
-
-msgid "Fresh content  (no date appended — displayed as-is)"
-msgstr "Contenu à jour (sans date ajoutée — affiché tel quel)"
-
-msgid "Template Tags"
-msgstr "Balises de modèle"
-
-msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
-msgstr "Utilisez ces fonctions PHP n'importe où dans votre thème lorsque le placement est défini sur Manuel."
-
-msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
-msgstr "Affiche le HTML rendu directement. Utilisez à l'intérieur de The Loop ou passez un ID d'article."
-
-msgid "Expected HTML output:"
-msgstr "Sortie HTML attendue :"
-
-msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
-msgstr "Renvoie la chaîne HTML rendue au lieu de l'afficher. Utile pour une manipulation further."
-
-msgid "Date Format Reference"
-msgstr "Référence des formats de date"
-
-msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
-msgstr "Lors de l'utilisation d'un format de date personnalisé, les mêmes jetons de date PHP utilisés par WordPress s'appliquent. %s"
-
-msgid "View full format reference &rarr;"
-msgstr "Voir la référence complète des formats &rarr;"
-
-msgid "Token"
-msgstr "Jeton"
-
-msgid "Example output"
-msgstr "Exemple de sortie"
-
-msgid "March 28, 2026"
-msgstr "28 mars 2026"
-
-msgid "28/03/2026"
-msgstr "28/03/2026"
-
-msgid "28 Mar 2026"
-msgstr "28 mar 2026"
-
-msgid "2026-03-28"
-msgstr "2026-03-28"
-
-msgid "Format reference"
-msgstr "Référence de format"
-
-msgid "Frequently Asked Questions"
-msgstr "Questions Fréquentes"
-
-msgid "The label is not appearing on my posts."
-msgstr "L'étiquette n'apparaît pas sur mes articles."
-
-msgid "Check that Enable output is ticked on the Settings tab."
-msgstr "Vérifiez que Activer la sortie est coché dans l'onglet Paramètres."
-
-msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
-msgstr "Vérifiez que le type de contenu (ex. : Article, Page) est sélectionné dans la liste des Types de contenu."
-
-msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
-msgstr "Si %s est coché, l'étiquette ne s'affichera que lorsque l'article aura été modifié après sa date de publication originale."
-
-msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
-msgstr "Si le Placement automatique est défini sur Manuel, rien n'est injecté automatiquement — ajoutez la balise de modèle à votre thème."
-
-msgid "How do I place the label exactly where I want it?"
-msgstr "Comment placer l'étiquette exactement où je le souhaite ?"
-
-msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
-msgstr "Définissez le Placement automatique sur %1$s dans l'onglet Paramètres, puis ajoutez %2$s dans le modèle de votre thème où vous souhaitez que l'étiquette apparaisse."
-
-msgid "Can I show just a static label with no date?"
-msgstr "Puis-je afficher simplement une étiquette statique sans date ?"
-
-msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
-msgstr "Oui. Supprimez %s du Modèle d'étiquette. Le texte sera affiché tel quel sans date ajoutée."
-
-msgid "If you need help with setup, have found a bug, or want to request a feature, get in touch."
-msgstr "Si vous avez besoin d'aide pour la configuration, avez trouvé un bug ou souhaitez demander une fonctionnalité, contactez-nous."
-
-msgid "Settings"
-msgstr "Paramètres"
-
-msgid "Usage &amp; Support"
-msgstr "Utilisation et Support"
-
+msgstr ""
+"Affichez et contrôlez la date de dernière mise à jour des articles à des "
+"positions flexibles."
+
+#. Author of the plugin
+#: micro-site-care-post-last-updated-date.php
 msgid "Anomalous Developers"
 msgstr "Anomalous Developers"
 
-msgid "https://anomalous.co.za"
-msgstr "https://anomalous.co.za"
+#. translators: %s is the formatted post last-updated date.
+#: includes/class-micro-site-care-post-last-updated-date-module.php:143
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:101
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:124
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:186
+#: includes/class-micro-site-care-post-last-updated-date.php:101
+#, php-format
+msgid "Updated %s"
+msgstr "Mis à jour %s"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:44
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:45
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:204
+msgid "MSC Post Last Updated Date"
+msgstr "MSC Date de dernière mise à jour"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:87
+msgid "You do not have permission to access this page."
+msgstr "Vous n'avez pas la permission d'accéder à cette page."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:93
+msgid "Security check failed. Please try again."
+msgstr "La vérification de sécurité a échoué. Veuillez réessayer."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:208
+msgid "Settings saved."
+msgstr "Paramètres enregistrés."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:213
+msgid "Settings"
+msgstr "Paramètres"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:216
+msgid "Usage &amp; Support"
+msgstr "Utilisation et Support"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:227
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:478
+msgid "Support"
+msgstr "Support"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:231
+msgid "Questions, bugs, or setup help?"
+msgstr "Questions, bugs ou aide à la configuration ?"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:233
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:482
+msgid "Get Support"
+msgstr "Obtenir du support"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:247
+msgid "Enable output"
+msgstr "Activer la sortie"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:251
+msgid "Show Last Updated date on enabled post types."
+msgstr ""
+"Afficher la date de dernière mise à jour sur les types de contenu activés."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:256
+msgid "Automatic placement"
+msgstr "Placement automatique"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:259
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:371
+msgid "After content"
+msgstr "Après le contenu"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:260
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:372
+msgid "Before content"
+msgstr "Avant le contenu"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:261
+msgid "Before and after content"
+msgstr "Avant et après le contenu"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:262
+msgid "Manual only (template tag)"
+msgstr "Manuel uniquement (balise de modèle)"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:264
+msgid ""
+"Use Manual to place output via the template tag in your theme. See the Usage "
+"tab for examples."
+msgstr ""
+"Utilisez Manuel uniquement pour placer la sortie via la balise de modèle "
+"dans votre thème. Consultez l'onglet Utilisation et Support pour des "
+"exemples."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:268
+msgid "Label template"
+msgstr "Modèle d'étiquette"
+
+#. translators: 1: literal %s token shown as code, 2: example label shown as code
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:275
+#, php-format
+msgid ""
+"Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the "
+"label with no date."
+msgstr ""
+"Utilisez %1$s là où la date doit apparaître, ex. %2$s. Omettez %1$s pour "
+"afficher l'étiquette sans date."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:284
+msgid "Date format source"
+msgstr "Source du format de date"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:287
+msgid "Use WordPress site date format"
+msgstr "Utiliser le format de date du site WordPress"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:288
+msgid "Use custom date format"
+msgstr "Utiliser un format de date personnalisé"
+
+#. translators: %s is a URL
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:294
+#, php-format
+msgid "Custom format uses PHP date format tokens. %s"
+msgstr "Le format personnalisé utilise les jetons de date PHP de WordPress. %s"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:295
+msgid "Format reference"
+msgstr "Référence de format"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:302
+msgid "Custom date format"
+msgstr "Format de date personnalisé"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:305
+msgid "Only used when Date format source is set to Custom. Default: F j, Y"
+msgstr ""
+"Utilisé uniquement lorsque la Source du format de date est définie sur "
+"Personnalisé. Par défaut : F j, Y"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:309
+msgid "Visibility condition"
+msgstr "Condition de visibilité"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:313
+msgid "Only show when modified date differs from publish date."
+msgstr ""
+"Afficher uniquement lorsque la date de modification diffère de la date de "
+"publication."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:318
+msgid "Post type mode"
+msgstr "Mode de type de contenu"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:321
+msgid "Show only on selected post types"
+msgstr "Afficher uniquement sur les types de contenu sélectionnés"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:322
+msgid "Show on all public post types except selected"
+msgstr "Afficher sur tous les types de contenu publics sauf les sélectionnés"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:327
+msgid "Post types"
+msgstr "Types de contenu"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:352
+msgid "Save Settings"
+msgstr "Enregistrer les paramètres"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:361
+msgid "Automatic Injection"
+msgstr "Injection automatique"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:362
+msgid ""
+"When a placement mode other than Manual is selected, the plugin "
+"automatically injects the last-updated label into singular post/page content "
+"via the_content filter."
+msgstr ""
+"Lorsqu'un mode de placement autre que Manuel uniquement est sélectionné, le "
+"plugin injecte automatiquement l'étiquette de dernière mise à jour dans le "
+"contenu singulier article/page via le filtre the_content."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:366
+msgid "Mode"
+msgstr "Mode"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:367
+msgid "Expected output position"
+msgstr "Position de sortie attendue"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:371
+msgid "Label appears below the post body."
+msgstr "L'étiquette apparaît sous le corps de l'article."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:372
+msgid "Label appears above the post body."
+msgstr "L'étiquette apparaît au-dessus du corps de l'article."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:373
+msgid "Before and after"
+msgstr "Avant et après"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:373
+msgid "Label appears both above and below the post body."
+msgstr ""
+"L'étiquette apparaît à la fois au-dessus et en dessous du corps de l'article."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:374
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:461
+msgid "Manual only"
+msgstr "Manuel uniquement"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:374
+msgid ""
+"Nothing is injected automatically. Use the template tag below in your theme "
+"file."
+msgstr ""
+"Rien n'est injecté automatiquement. Utilisez la balise de modèle ci-dessous "
+"dans votre fichier de thème."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:378
+msgid "Label Template"
+msgstr "Modèle d'étiquette"
+
+#. translators: %s is a literal %s token placeholder shown in code
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:383
+#, php-format
+msgid ""
+"The Label template setting controls the text displayed. Use %s as the date "
+"placeholder."
+msgstr ""
+"Le paramètre Modèle d'étiquette contrôle le texte affiché. Utilisez %s comme "
+"espace réservé pour la date."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:391
+msgid "Template setting"
+msgstr "Paramètre de modèle"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:392
+msgid "Example frontend output"
+msgstr "Exemple de sortie frontend"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:396
+msgid "Updated March 28, 2026"
+msgstr "Mis à jour le 28 mars 2026"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:397
+msgid "Last checked: March 28, 2026"
+msgstr "Dernière vérification : 28 mars 2026"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:398
+msgid "Fresh content  (no date appended — displayed as-is)"
+msgstr "Contenu à jour (sans date ajoutée — affiché tel quel)"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:402
+msgid "Template Tags"
+msgstr "Balises de modèle"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:403
+msgid ""
+"Use these PHP functions anywhere in your theme when placement is set to "
+"Manual."
+msgstr ""
+"Utilisez ces fonctions PHP n'importe où dans votre thème lorsque le "
+"placement est défini sur Manuel."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:406
+msgid ""
+"Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
+msgstr ""
+"Affiche le HTML rendu directement. Utilisez à l'intérieur de The Loop ou "
+"passez un ID d'article."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:409
+msgid "Expected HTML output:"
+msgstr "Sortie HTML attendue :"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
+msgid ""
+"Returns the rendered HTML string instead of echoing. Useful for further "
+"manipulation."
+msgstr ""
+"Renvoie la chaîne HTML rendue au lieu de l'afficher. Utile pour une "
+"manipulation further."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:417
+msgid "Date Format Reference"
+msgstr "Référence des formats de date"
+
+#. translators: %s is a URL
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:422
+#, php-format
+msgid ""
+"When using a custom date format, the same PHP date tokens used by WordPress "
+"apply. %s"
+msgstr ""
+"Lors de l'utilisation d'un format de date personnalisé, les mêmes jetons de "
+"date PHP utilisés par WordPress s'appliquent. %s"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:423
+msgid "View full format reference &rarr;"
+msgstr "Voir la référence complète des formats &rarr;"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:428
+msgid "Token"
+msgstr "Jeton"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:428
+msgid "Example output"
+msgstr "Exemple de sortie"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:430
+msgid "March 28, 2026"
+msgstr "28 mars 2026"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:431
+msgid "28/03/2026"
+msgstr "28/03/2026"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:432
+msgid "2026-03-28"
+msgstr "2026-03-28"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:433
+msgid "28 Mar 2026"
+msgstr "28 mar 2026"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:437
+msgid "Frequently Asked Questions"
+msgstr "Questions Fréquentes"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:439
+msgid "The label is not appearing on my posts."
+msgstr "L'étiquette n'apparaît pas sur mes articles."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:441
+msgid "Check that Enable output is ticked on the Settings tab."
+msgstr "Vérifiez que Activer la sortie est coché dans l'onglet Paramètres."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:442
+msgid ""
+"Check that the post type (e.g. Post, Page) is selected in the Post types "
+"list."
+msgstr ""
+"Vérifiez que le type de contenu (ex. : Article, Page) est sélectionné dans "
+"la liste des Types de contenu."
+
+#. translators: %s is a setting name
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:447
+#, php-format
+msgid ""
+"If %s is ticked, the label will only show when the article has been edited "
+"after its original publish date."
+msgstr ""
+"Si %s est coché, l'étiquette ne s'affichera que lorsque l'article aura été "
+"modifié après sa date de publication originale."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:448
+msgid "Only show when modified date differs from publish date"
+msgstr ""
+"Afficher uniquement lorsque la date de modification diffère de la date de "
+"publication"
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:452
+msgid ""
+"If Automatic placement is set to Manual, nothing is injected automatically — "
+"add the template tag to your theme."
+msgstr ""
+"Si le Placement automatique est défini sur Manuel, rien n'est injecté "
+"automatiquement — ajoutez la balise de modèle à votre thème."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:455
+msgid "How do I place the label exactly where I want it?"
+msgstr "Comment placer l'étiquette exactement où je le souhaite ?"
+
+#. translators: %1$s and %2$s are setting/function names
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:460
+#, php-format
+msgid ""
+"Set Automatic placement to %1$s on the Settings tab, then add %2$s in your "
+"theme template wherever you want it to appear."
+msgstr ""
+"Définissez le Placement automatique sur %1$s dans l'onglet Paramètres, puis "
+"ajoutez %2$s dans le modèle de votre thème où vous souhaitez que l'étiquette "
+"apparaisse."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:467
+msgid "Can I show just a static label with no date?"
+msgstr "Puis-je afficher simplement une étiquette statique sans date ?"
+
+#. translators: %s is a literal %s placeholder shown in code
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:472
+#, php-format
+msgid ""
+"Yes. Remove %s from the Label template. The text will be output as-is with "
+"no date appended."
+msgstr ""
+"Oui. Supprimez %s du Modèle d'étiquette. Le texte sera affiché tel quel sans "
+"date ajoutée."
+
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:479
+msgid ""
+"If you need help with setup, have found a bug, or want to request a feature, "
+"get in touch."
+msgstr ""
+"Si vous avez besoin d'aide pour la configuration, avez trouvé un bug ou "
+"souhaitez demander une fonctionnalité, contactez-nous."
+
+#~ msgid "Upgrade to Pro"
+#~ msgstr "Passer à Pro"
+
+#~ msgid "Unlock powerful extras:"
+#~ msgstr "Débloquez des fonctionnalités puissantes :"
+
+#~ msgid "Relative dates (e.g. \"3 days ago\")"
+#~ msgstr "Dates relatives (ex. : \"il y a 3 jours\")"
+
+#~ msgid "Hybrid mode — relative then absolute"
+#~ msgstr "Mode hybride — relatif puis absolu"
+
+#~ msgid "Style presets (muted, pill, badge)"
+#~ msgstr "Préréglages de style (discret, pilule, badge)"
+
+#~ msgid "Per-post override (show/hide/global)"
+#~ msgstr "Override par article (afficher/masquer/global)"
+
+#~ msgid "Shortcode with per-instance overrides"
+#~ msgstr "Shortcode avec overrides par instance"
+
+#~ msgid "View Pro Features"
+#~ msgstr "Voir les fonctionnalités Pro"

@@ -209,10 +209,10 @@ class Settings {
 			<?php endif; ?>
 
 			<nav class="nav-tab-wrapper">
-				<a href="<?php echo esc_url( $tab_url_settings ); ?>" class="nav-tab <?php echo 'settings' === $active_tab ? 'nav-tab-active' : ''; ?>">
+				<a href="<?php echo esc_url( $tab_url_settings ); ?>" class="nav-tab <?php echo esc_attr( 'settings' === $active_tab ? 'nav-tab-active' : '' ); ?>">
 					<?php esc_html_e( 'Settings', 'micro-site-care-post-last-updated-date' ); ?>
 				</a>
-				<a href="<?php echo esc_url( $tab_url_usage ); ?>" class="nav-tab <?php echo 'usage' === $active_tab ? 'nav-tab-active' : ''; ?>">
+				<a href="<?php echo esc_url( $tab_url_usage ); ?>" class="nav-tab <?php echo esc_attr( 'usage' === $active_tab ? 'nav-tab-active' : '' ); ?>">
 					<?php esc_html_e( 'Usage &amp; Support', 'micro-site-care-post-last-updated-date' ); ?>
 				</a>
 			</nav>
@@ -272,7 +272,7 @@ class Settings {
 												<?php
 												printf(
 													/* translators: 1: literal %s token shown as code, 2: example label shown as code */
-													esc_html__( 'Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date.', 'micro-site-care-post-last-updated-date' ),
+														wp_kses_post( __( 'Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the label with no date.', 'micro-site-care-post-last-updated-date' ) ),
 													'<code>%s</code>',
 													'<code>Updated %s</code>'
 												);
@@ -291,7 +291,7 @@ class Settings {
 												<?php
 												printf(
 													/* translators: %s is a URL */
-													esc_html__( 'Custom format uses PHP date format tokens. %s', 'micro-site-care-post-last-updated-date' ),
+														wp_kses_post( __( 'Custom format uses PHP date format tokens. %s', 'micro-site-care-post-last-updated-date' ) ),
 													'<a href="https://wordpress.org/documentation/article/customize-date-and-time-format/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Format reference', 'micro-site-care-post-last-updated-date' ) . '</a>'
 												);
 												?>
@@ -380,7 +380,7 @@ class Settings {
 						<?php
 						printf(
 							/* translators: %s is a literal %s token placeholder shown in code */
-							esc_html__( 'The Label template setting controls the text displayed. Use %s as the date placeholder.', 'micro-site-care-post-last-updated-date' ),
+							wp_kses_post( __( 'The Label template setting controls the text displayed. Use %s as the date placeholder.', 'micro-site-care-post-last-updated-date' ) ),
 							'<code>%s</code>'
 						);
 						?>
@@ -419,7 +419,7 @@ class Settings {
 						<?php
 						printf(
 							/* translators: %s is a URL */
-							esc_html__( 'When using a custom date format, the same PHP date tokens used by WordPress apply. %s', 'micro-site-care-post-last-updated-date' ),
+						wp_kses_post( __( 'When using a custom date format, the same PHP date tokens used by WordPress apply. %s', 'micro-site-care-post-last-updated-date' ) ),
 							'<a href="https://wordpress.org/documentation/article/customize-date-and-time-format/" target="_blank" rel="noopener noreferrer">' . esc_html__( 'View full format reference &rarr;', 'micro-site-care-post-last-updated-date' ) . '</a>'
 						);
 						?>
@@ -444,7 +444,7 @@ class Settings {
 							<?php
 							printf(
 								/* translators: %s is a setting name */
-								esc_html__( 'If %s is ticked, the label will only show when the article has been edited after its original publish date.', 'micro-site-care-post-last-updated-date' ),
+							wp_kses_post( __( 'If %s is ticked, the label will only show when the article has been edited after its original publish date.', 'micro-site-care-post-last-updated-date' ) ),
 								'<strong>' . esc_html__( 'Only show when modified date differs from publish date', 'micro-site-care-post-last-updated-date' ) . '</strong>'
 							);
 							?>
@@ -457,7 +457,7 @@ class Settings {
 						<?php
 						printf(
 							/* translators: %1$s and %2$s are setting/function names */
-							esc_html__( 'Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear.', 'micro-site-care-post-last-updated-date' ),
+						wp_kses_post( __( 'Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear.', 'micro-site-care-post-last-updated-date' ) ),
 							'<strong>' . esc_html__( 'Manual only', 'micro-site-care-post-last-updated-date' ) . '</strong>',
 							'<code>&lt;?php msclup_the_last_updated(); ?&gt;</code>'
 						);
@@ -469,7 +469,7 @@ class Settings {
 						<?php
 						printf(
 							/* translators: %s is a literal %s placeholder shown in code */
-							esc_html__( 'Yes. Remove %s from the Label template. The text will be output as-is with no date appended.', 'micro-site-care-post-last-updated-date' ),
+							wp_kses_post( __( 'Yes. Remove %s from the Label template. The text will be output as-is with no date appended.', 'micro-site-care-post-last-updated-date' ) ),
 							'<code>%s</code>'
 						);
 						?>

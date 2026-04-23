@@ -81,14 +81,15 @@ class Module {
 		}
 
 		if ( 'before' === $position ) {
-			return $output . $content;
+			return wp_kses_post( $output ) . $content;
 		}
 
 		if ( 'both' === $position ) {
-			return $output . $content . $output;
+			$safe_output = wp_kses_post( $output );
+			return $safe_output . $content . $safe_output;
 		}
 
-		return $content . $output;
+		return $content . wp_kses_post( $output );
 	}
 
 	/**
