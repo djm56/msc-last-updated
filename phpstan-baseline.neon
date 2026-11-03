@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Property MSCLUD\\Plugin\:\:\$admin_analytics \(object\|null\) is never assigned object so it can be removed from the property type\.$#'
+			identifier: property.unusedType
+			count: 1
+			path: includes/class-micro-site-care-post-last-updated-date.php
+
+		-
+			message: '#^Property MSCLUD\\Plugin\:\:\$admin_analytics is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: includes/class-micro-site-care-post-last-updated-date.php
+
+		-
+			message: '#^Property MSCLUD\\Plugin\:\:\$analytics \(object\|null\) is never assigned object so it can be removed from the property type\.$#'
+			identifier: property.unusedType
+			count: 1
+			path: includes/class-micro-site-care-post-last-updated-date.php
+
+		-
+			message: '#^Property MSCLUD\\Plugin\:\:\$analytics is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: includes/class-micro-site-care-post-last-updated-date.php
+
+		-
+			message: '#^Property MSCLUD\\Plugin\:\:\$settings is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: includes/class-micro-site-care-post-last-updated-date.php

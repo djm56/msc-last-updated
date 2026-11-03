@@ -1,3 +1,6 @@
 node_modules
 vendor
 .DS_Store
+
+# Security scan reports (never committed)
+/scan-reports/
