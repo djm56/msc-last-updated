@@ -3,7 +3,7 @@
  * Plugin Name: MSC: Post Last Updated Date
  * Plugin URI: https://github.com/djm56/msc-last-updated
  * Description: Display and control the post last-updated date in flexible positions.
- * Version: 1.6.3
+ * Version: 1.6.4
  * Author: Anomalous Developers
  * Author URI: https://anomalous.co.za
  * Text Domain: micro-site-care-post-last-updated-date
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Current plugin version.
  */
-define( 'MSCLUD_PLUGIN_VERSION', '1.6.3' );
+define( 'MSCLUD_PLUGIN_VERSION', '1.6.4' );
 
 /**
  * Absolute path to the main plugin file.

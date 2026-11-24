@@ -4,7 +4,7 @@ Tags: last updated date, last modified date, show modified date, dateModified sc
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -113,6 +113,10 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 
 == Changelog ==
 
+= 1.6.4 =
+* Changed: Dev tooling security patch — composer dev-dependencies updated to clear CVE-2026-65954, CVE-2026-67434, and CVE-2026-45293; `composer audit` is now clean.
+* Note: No plugin source changes required — zero shipping-code findings in this scan cycle.
+
 = 1.6.3 =
 * Accessibility: added table header scope attributes, fieldset legends, and ARIA descriptions.
 
@@ -167,6 +171,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.6.4 =
+Security scan maintenance release: updates composer dev-dependencies to clear recent CVEs. No functional changes — safe update.
 
 = 1.6.3 =
 Accessibility: table header scopes, fieldset legends, and ARIA descriptions for assistive technology users. Safe update.

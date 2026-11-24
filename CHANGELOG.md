@@ -3,6 +3,16 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.6.4] - 2026-11-05
+
+### Changed
+
+- Dev tooling security patch — composer dev-dependencies updated to clear CVE-2026-65954 / CVE-2026-67434 / CVE-2026-45293; `composer audit` now clean.
+
+### Notes
+
+- No plugin source changes required — zero shipping-code findings in this scan cycle.
+
 ## [1.6.3] - 2026-08-28
 
 ### Improved
